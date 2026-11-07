@@ -12,84 +12,203 @@
             --light: #f4f7f6;
             --dark: #121212;
         }
+
         * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
         body { background-color: var(--light); color: #333; line-height: 1.6; }
-        header { background: linear-gradient(135deg, var(--secondary), var(--primary)); color: white; padding: 1rem 5%; position: sticky; top: 0; z-index: 1000; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 4px 10px rgba(0,0,0,0.15); }
-        .logo-text h1 { font-size: 1.4rem; letter-spacing: 1px; color: white; }
-        .logo-text p { font-size: 0.75rem; color: var(--accent); }
+
+        /* Header Navigation */
+        header {
+            background: linear-gradient(135deg, var(--secondary), var(--primary));
+            color: white;
+            padding: 1rem 5%;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+        }
+
+        .logo-container { display: flex; align-items: center; gap: 12px; }
+        .logo-container img { height: 45px; background: white; padding: 4px; border-radius: 6px; }
+        .logo-text h1 { font-size: 1.3rem; letter-spacing: 1px; color: white; }
+        .logo-text p { font-size: 0.7rem; color: var(--accent); }
+
         nav ul { display: flex; list-style: none; gap: 20px; }
         nav a { color: white; text-decoration: none; font-weight: 500; transition: color 0.3s; }
         nav a:hover { color: var(--accent); }
-        .hero { background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('images/hero-ac.jpg'); background-size: cover; background-position: center; color: white; text-align: center; padding: 100px 20px; }
-        .hero h2 { font-size: 2.8rem; margin-bottom: 15px; }
-        .hero p { font-size: 1.2rem; max-width: 700px; margin: 0 auto 25px; }
-        .btn { display: inline-block; background-color: var(--accent); color: white; padding: 12px 30px; border-radius: 25px; text-decoration: none; font-weight: bold; transition: background 0.3s; }
-        .btn:hover { background-color: #0088cc; }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(0,38,77,0.85), rgba(0,75,147,0.85)), url('images/image_p1_1_Im0.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            padding: 120px 20px;
+        }
+
+        .hero h2 { font-size: 2.8rem; margin-bottom: 15px; text-shadow: 0 2px 4px rgba(0,0,0,0.3); }
+        .hero p { font-size: 1.2rem; max-width: 700px; margin: 0 auto 25px; opacity: 0.95; }
+
+        .btn {
+            display: inline-block;
+            background-color: var(--accent);
+            color: white;
+            padding: 12px 32px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: bold;
+            box-shadow: 0 4px 12px rgba(0,168,255,0.4);
+            transition: all 0.3s ease;
+        }
+        .btn:hover { background-color: #0088cc; transform: translateY(-2px); }
+
         section { padding: 60px 5%; max-width: 1200px; margin: 0 auto; }
         .section-title { text-align: center; font-size: 2.2rem; color: var(--secondary); margin-bottom: 40px; position: relative; }
         .section-title::after { content: ''; width: 60px; height: 4px; background-color: var(--accent); display: block; margin: 10px auto 0; border-radius: 2px; }
-        .about-grid, .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px; }
-        .card, .service-card { background: white; padding: 30px; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.05); border-left: 4px solid var(--primary); }
-        .card h3, .service-card h3 { color: var(--primary); margin-bottom: 15px; }
+
+        /* Grids & Cards */
+        .about-grid, .services-grid, .products-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px; }
+        .card, .service-card, .product-card { background: white; border-radius: 10px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.05); transition: transform 0.3s; }
+        .service-card:hover, .product-card:hover { transform: translateY(-5px); }
+
+        .service-card img, .product-card img { width: 100%; height: 200px; object-fit: cover; }
+        .card { padding: 30px; border-left: 4px solid var(--primary); }
+        .card h3, .service-card h3, .product-card h3 { color: var(--primary); margin-bottom: 15px; }
+        .content { padding: 20px; }
+
+        .brands-container { text-align: center; background: white; padding: 40px; border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.05); }
+        .brands-img { max-width: 100%; height: auto; margin-top: 20px; }
+
         .contact-info { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; background: var(--secondary); color: white; padding: 40px; border-radius: 10px; }
         .contact-item h4 { color: var(--accent); margin-bottom: 10px; }
+
         footer { background-color: var(--dark); color: white; text-align: center; padding: 20px; font-size: 0.9rem; }
+
+        @media (max-width: 768px) {
+            header { flex-direction: column; gap: 15px; }
+            nav ul { flex-wrap: wrap; justify-content: center; }
+            .hero h2 { font-size: 2rem; }
+        }
     </style>
 </head>
 <body>
 
+    <!-- Header / Navbar -->
     <header>
-        <div class="logo-text">
-            <h1>COOL LAND</h1>
-            <p>AIRCONDITIONING TRADING AND SERVICES</p>
+        <div class="logo-container">
+            <img src="images/image_p12_1_Im0.jpg" alt="Cool Land Logo" onerror="this.style.display='none'">
+            <div class="logo-text">
+                <h1>COOL LAND</h1>
+                <p>AIRCONDITIONING TRADING AND SERVICES</p>
+            </div>
         </div>
         <nav>
             <ul>
                 <li><a href="#about">About Us</a></li>
                 <li><a href="#services">Services</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#brands">Brands</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
 
+    <!-- Hero Banner -->
     <section class="hero">
         <h2>Stay Cool & Comfortable All Year Round</h2>
-        <p>Top-notch air conditioning, electrical & plumbing solutions for residential and commercial clients in Qatar.</p>
+        <p>Top-notch air conditioning, electrical & plumbing solutions for residential and commercial clients in Qatar[cite: 3, 10, 11].</p>
         <a href="#contact" class="btn">Get in Touch</a>
     </section>
 
+    <!-- About Us Section -->
     <section id="about">
         <h2 class="section-title">About Us</h2>
         <div class="about-grid">
             <div class="card">
                 <h3>Who We Are</h3>
-                <p>Cool Land specializes in delivering top-notch air conditioning, electrical, and plumbing solutions for both residential and commercial clients in Qatar.</p>
+                <p>Cool Land specializes in delivering top-notch air conditioning, electrical, and plumbing solutions for both residential and commercial clients in Qatar[cite: 3, 10, 11].</p>
             </div>
             <div class="card">
                 <h3>Our Mission</h3>
-                <p>To provide fast, reliable, and affordable air conditioning services that keep our customers cool and comfortable all year round.</p>
+                <p>To provide fast, reliable, and affordable air conditioning services that keep our customers cool and comfortable all year round[cite: 3].</p>
+            </div>
+            <div class="card">
+                <h3>Our Vision</h3>
+                <p>To be a trusted name in air conditioning, known for quality service, expert solutions, and customer satisfaction[cite: 3].</p>
             </div>
         </div>
     </section>
 
+    <!-- Services Section -->
     <section id="services">
         <h2 class="section-title">Our Services</h2>
         <div class="services-grid">
             <div class="service-card">
-                <h3>AC Installation</h3>
-                <p>Professional installation for homes, offices & commercial spaces (Split, Window, Ducted & Central systems).</p>
+                <img src="images/image_p7_1_Im0.jpg" alt="AC Installation">
+                <div class="content">
+                    <h3>AC Installation</h3>
+                    <p>Professional installation for homes, offices & commercial spaces (Split, Window, Ducted & Central systems)[cite: 7, 8].</p>
+                </div>
             </div>
             <div class="service-card">
-                <h3>AC Maintenance & Repair</h3>
-                <p>Regular check-ups, troubleshooting, noise fixing, gas top-up/refilling, filter cleaning, and AMC contracts.</p>
+                <img src="images/image_p8_1_Im0.jpg" alt="AC Maintenance & Repair">
+                <div class="content">
+                    <h3>Maintenance & Repair</h3>
+                    <p>Regular check-ups, troubleshooting, noise fixing, duct cleaning, gas refilling, and AMC contracts.</p>
+                </div>
             </div>
             <div class="service-card">
-                <h3>Electrical Services</h3>
-                <p>Comprehensive electrical system installations, troubleshooting, and maintenance for safety and performance.</p>
+                <img src="images/image_p9_1_Im0.jpg" alt="Electrical Services">
+                <div class="content">
+                    <h3>Electrical Solutions</h3>
+                    <p>Comprehensive electrical system installations, troubleshooting, and maintenance for safety and performance.</p>
+                </div>
+            </div>
+            <div class="service-card">
+                <img src="images/image_p10_1_Im0.jpg" alt="Plumbing Services">
+                <div class="content">
+                    <h3>Plumbing Services</h3>
+                    <p>Expert plumbing repairs, installations, and 24/7 emergency service support to keep your systems running smoothly.</p>
+                </div>
             </div>
         </div>
     </section>
 
+    <!-- Products Section -->
+    <section id="products">
+        <h2 class="section-title">Our Products</h2>
+        <p style="text-align: center; margin-bottom: 30px;">New & Used Air Conditioners at the Best Prices</p>
+        <div class="products-grid">
+            <div class="product-card">
+                <img src="images/image_p4_1_Im0.jpg" alt="New AC Units">
+                <div class="content">
+                    <h3>New Air Conditioners</h3>
+                    <p>Split Type ACs, Cassette ACs, Inverter ACs for energy savings, Ducted Systems & Window ACs[cite: 5, 6].</p>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="images/image_p5_1_Im0.jpg" alt="Used Air Conditioners">
+                <div class="content">
+                    <h3>Pre-Owned AC Units</h3>
+                    <p>Lightly used, top-condition ACs. Fully tested, cleaned, serviced, and guaranteed for high performance.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Brands Section -->
+    <section id="brands">
+        <h2 class="section-title">Trusted AC Brands</h2>
+        <div class="brands-container">
+            <p>Cool Land brings you a wide selection of top-performing, energy-efficient air conditioners from globally recognized brands:</p>
+            <img src="images/image_p11_1_Im0.png" alt="AC Brands We Deal In" class="brands-img">
+        </div>
+    </section>
+
+    <!-- Contact Section -->
     <section id="contact">
         <h2 class="section-title">Contact Us</h2>
         <div class="contact-info">
@@ -100,11 +219,17 @@
             </div>
             <div class="contact-item">
                 <h4>Address</h4>
-                <p>Area -53 Maidheer, Street 740, Qatar</p>
+                <p>Area -53 Maidheer, Street 740</p>
+                <p>Building-81, Shop 16, Qatar</p>
+            </div>
+            <div class="contact-item">
+                <h4>Website</h4>
+                <p>www.coollandqatar.com</p>
             </div>
         </div>
     </section>
 
+    <!-- Footer -->
     <footer>
         <p>&copy; 2026 Cool Land Air Conditioning Trading & Services. All Rights Reserved.</p>
     </footer>
