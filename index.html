@@ -20,60 +20,63 @@
 </head>
 <body class="bg-gray-950 text-gray-100 font-sans antialiased">
 
-    <!-- Header / Navbar -->
-    <header class="sticky top-0 z-50 bg-black/90 backdrop-blur-md border-b border-gray-800">
+    <!-- Header / Navbar (Clean White Background for Perfect Logo Visibility) -->
+    <header class="sticky top-0 z-50 bg-white border-b border-gray-200 shadow-md">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center h-20">
             <a href="#" class="flex items-center gap-3">
-                <img src="logo.png" alt="Cool Land Logo" class="h-12 w-auto object-contain" onerror="this.src='https://via.placeholder.com/150x50?text=COOL+LAND'">
+                <img src="logo.png" alt="Cool Land Logo" class="h-14 w-auto object-contain" onerror="this.src='https://via.placeholder.com/160x60?text=COOL+LAND'">
             </a>
             
-            <nav class="hidden md:flex space-x-8 font-semibold text-gray-300">
-                <a href="#home" class="hover:text-blue-400 transition">Home</a>
-                <a href="#about" class="hover:text-blue-400 transition">About Us</a>
-                <a href="#products" class="hover:text-blue-400 transition">AC Sales</a>
-                <a href="#services" class="hover:text-blue-400 transition">Services</a>
-                <a href="#electrical" class="hover:text-blue-400 transition">Electrical</a>
-                <a href="#plumbing" class="hover:text-blue-400 transition">Plumbing</a>
-                <a href="#brands" class="hover:text-blue-400 transition">Brands</a>
-                <a href="#contact" class="hover:text-blue-400 transition">Contact</a>
+            <nav class="hidden md:flex space-x-8 font-bold text-gray-800">
+                <a href="#home" class="hover:text-blue-600 transition">Home</a>
+                <a href="#about" class="hover:text-blue-600 transition">About Us</a>
+                <a href="#products" class="hover:text-blue-600 transition">AC Sales</a>
+                <a href="#services" class="hover:text-blue-600 transition">Services</a>
+                <a href="#electrical" class="hover:text-blue-600 transition">Electrical</a>
+                <a href="#plumbing" class="hover:text-blue-600 transition">Plumbing</a>
+                <a href="#brands" class="hover:text-blue-600 transition">Brands</a>
+                <a href="#contact" class="hover:text-blue-600 transition">Contact</a>
             </nav>
 
             <div class="hidden md:flex items-center gap-4">
-                <a href="tel:+97430711221" class="bg-blue-600 text-white px-5 py-2.5 rounded-lg font-semibold hover:bg-blue-700 transition flex items-center gap-2 shadow-lg shadow-blue-600/30">
+                <a href="tel:+97430711221" class="bg-blue-600 text-white px-5 py-2.5 rounded-lg font-bold hover:bg-blue-700 transition flex items-center gap-2 shadow-md">
                     <i class="fa-solid fa-phone"></i> Call Now
                 </a>
             </div>
 
-            <button id="menu-btn" class="md:hidden text-gray-300 text-2xl focus:outline-none">
+            <button id="menu-btn" class="md:hidden text-gray-800 text-2xl focus:outline-none">
                 <i class="fa-solid fa-bars"></i>
             </button>
         </div>
 
         <!-- Mobile Menu -->
-        <div id="mobile-menu" class="hidden md:hidden bg-gray-900 border-t border-gray-800 px-4 pt-2 pb-4 space-y-3">
-            <a href="#home" class="block text-gray-300 font-medium hover:text-blue-400">Home</a>
-            <a href="#about" class="block text-gray-300 font-medium hover:text-blue-400">About Us</a>
-            <a href="#products" class="block text-gray-300 font-medium hover:text-blue-400">AC Sales</a>
-            <a href="#services" class="block text-gray-300 font-medium hover:text-blue-400">Services</a>
-            <a href="#electrical" class="block text-gray-300 font-medium hover:text-blue-400">Electrical</a>
-            <a href="#plumbing" class="block text-gray-300 font-medium hover:text-blue-400">Plumbing</a>
-            <a href="#brands" class="block text-gray-300 font-medium hover:text-blue-400">Brands</a>
-            <a href="#contact" class="block text-gray-300 font-medium hover:text-blue-400">Contact</a>
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-200 px-4 pt-2 pb-4 space-y-3">
+            <a href="#home" class="block text-gray-800 font-bold hover:text-blue-600">Home</a>
+            <a href="#about" class="block text-gray-800 font-bold hover:text-blue-600">About Us</a>
+            <a href="#products" class="block text-gray-800 font-bold hover:text-blue-600">AC Sales</a>
+            <a href="#services" class="block text-gray-800 font-bold hover:text-blue-600">Services</a>
+            <a href="#electrical" class="block text-gray-800 font-bold hover:text-blue-600">Electrical</a>
+            <a href="#plumbing" class="block text-gray-800 font-bold hover:text-blue-600">Plumbing</a>
+            <a href="#brands" class="block text-gray-800 font-bold hover:text-blue-600">Brands</a>
+            <a href="#contact" class="block text-gray-800 font-bold hover:text-blue-600">Contact</a>
         </div>
     </header>
 
-    <!-- Animated Moving Hero Section -->
-    <section id="home" class="relative bg-gray-950 text-white min-h-[85vh] flex items-center overflow-hidden">
+    <!-- Animated Moving Hero Section (High Image Brightness & Clarity) -->
+    <section id="home" class="relative bg-gray-900 text-white min-h-[85vh] flex items-center overflow-hidden">
+        <!-- Moving Background Image -->
         <div class="absolute inset-0 bg-cover bg-center animate-hero-bg transition-transform duration-1000" style="background-image: url('hero-bg.jpg');"></div>
-        <div class="absolute inset-0 bg-gradient-to-r from-black/75 via-black/50 to-black/75"></div>
+        
+        <!-- Light Transparent Overlay for Full AC Photo Visibility -->
+        <div class="absolute inset-0 bg-gradient-to-r from-black/40 via-black/25 to-black/40"></div>
 
         <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 text-center md:text-left z-10">
             <div class="max-w-3xl">
-                <span class="inline-block bg-blue-600/90 border border-blue-400/30 text-white text-xs uppercase tracking-widest font-semibold px-4 py-1.5 rounded-full mb-4 shadow-lg backdrop-blur-sm">Leading HVAC & MEP Partner in Qatar</span>
-                <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight mb-6 leading-tight drop-shadow-lg">
+                <span class="inline-block bg-blue-600 text-white text-xs uppercase tracking-widest font-bold px-4 py-1.5 rounded-full mb-4 shadow-lg">Leading HVAC & MEP Partner in Qatar</span>
+                <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight mb-6 leading-tight drop-shadow-md">
                     Stay Cool & Comfortable All Year Round
                 </h1>
-                <p class="text-lg md:text-xl text-gray-200 mb-8 leading-relaxed drop-shadow">
+                <p class="text-lg md:text-xl text-gray-100 mb-8 leading-relaxed drop-shadow">
                     Top-notch air conditioning, electrical & plumbing solutions for residential and commercial clients in Qatar. Quality installation, fast repair, and guaranteed performance.
                 </p>
                 <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
@@ -86,7 +89,7 @@
         </div>
     </section>
 
-    <!-- About Us Section (Dark Brochure Style) -->
+    <!-- About Us Section (Brochure Page 2 Dark Theme) -->
     <section id="about" class="py-20 bg-gray-900 border-t border-b border-gray-800">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-3xl mx-auto mb-16">
@@ -95,7 +98,7 @@
                 <p class="mt-6 text-gray-300 text-lg leading-relaxed">
                     Cool Land, we specialize in delivering top-notch air conditioning solutions for both residential and commercial clients. Whether it's sales, installation, or maintenance, our team of certified professionals ensures efficient, affordable, and reliable cooling—every time.
                 </p>
-                <p class="mt-4 text-blue-400 font-medium">
+                <p class="mt-4 text-blue-400 font-semibold">
                     We're passionate about comfort, committed to quality, and proud to be your go-to AC partner.
                 </p>
             </div>
