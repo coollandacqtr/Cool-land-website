@@ -17,17 +17,36 @@
         }
     </style>
 </head>
-<body class="bg-gray-950 text-gray-100 font-sans antialiased">
+<body class="bg-white text-gray-800 font-sans antialiased">
 
-    <!-- Header / Navbar (Increased Logo Height & Prominent Display) -->
-    <header class="sticky top-0 z-50 bg-white border-b border-gray-200 shadow-md">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center h-24">
-            <a href="#" class="flex items-center py-2">
-                <!-- Prominent Bigger Logo -->
-                <img src="logo.png" alt="Cool Land Logo" class="h-20 max-h-20 w-auto object-contain" onerror="this.src='https://via.placeholder.com/200x80?text=COOL+LAND'">
-            </a>
-            
-            <nav class="hidden md:flex space-x-8 font-bold text-gray-800 text-lg">
+    <!-- Top Contact Bar (Model Style) -->
+    <div class="bg-gray-100 border-b border-gray-200 text-xs sm:text-sm text-gray-600 py-2">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row justify-between items-center gap-2">
+            <div class="flex items-center gap-2">
+                <img src="logo.png" alt="Cool Land Logo" class="h-8 w-auto object-contain" onerror="this.src='https://via.placeholder.com/100x40?text=COOL+LAND'">
+                <span class="font-bold text-gray-900 tracking-wider">COOL LAND AIRCONDITIONING TRADING & SERVICES</span>
+            </div>
+            <div class="flex items-center gap-6">
+                <a href="tel:+97430711221" class="flex items-center gap-2 hover:text-blue-600 transition">
+                    <i class="fa-solid fa-phone text-red-600"></i>
+                    <span>Call Us: +974 3071 1221</span>
+                </a>
+                <a href="mailto:coollandacqtr@gmail.com" class="flex items-center gap-2 hover:text-blue-600 transition">
+                    <i class="fa-solid fa-envelope text-red-600"></i>
+                    <span>coollandacqtr@gmail.com</span>
+                </a>
+                <div class="flex items-center gap-2">
+                    <i class="fa-solid fa-location-dot text-red-600"></i>
+                    <span>Doha, Qatar</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Navigation Bar -->
+    <header class="sticky top-0 z-50 bg-white border-b border-gray-200 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center h-20">
+            <nav class="hidden md:flex space-x-8 font-bold text-gray-800 text-sm uppercase">
                 <a href="#home" class="hover:text-blue-600 transition">Home</a>
                 <a href="#about" class="hover:text-blue-600 transition">About Us</a>
                 <a href="#products" class="hover:text-blue-600 transition">AC Sales</a>
@@ -35,14 +54,8 @@
                 <a href="#electrical" class="hover:text-blue-600 transition">Electrical</a>
                 <a href="#plumbing" class="hover:text-blue-600 transition">Plumbing</a>
                 <a href="#brands" class="hover:text-blue-600 transition">Brands</a>
-                <a href="#contact" class="hover:text-blue-600 transition">Contact</a>
+                <a href="#contact" class="hover:text-blue-600 transition">Contact Us</a>
             </nav>
-
-            <div class="hidden md:flex items-center gap-4">
-                <a href="tel:+97430711221" class="bg-blue-600 text-white px-6 py-3 rounded-xl font-bold hover:bg-blue-700 transition flex items-center gap-2 shadow-md text-base">
-                    <i class="fa-solid fa-phone"></i> Call Now
-                </a>
-            </div>
 
             <button id="menu-btn" class="md:hidden text-gray-800 text-2xl focus:outline-none">
                 <i class="fa-solid fa-bars"></i>
@@ -58,404 +71,272 @@
             <a href="#electrical" class="block text-gray-800 font-bold hover:text-blue-600">Electrical</a>
             <a href="#plumbing" class="block text-gray-800 font-bold hover:text-blue-600">Plumbing</a>
             <a href="#brands" class="block text-gray-800 font-bold hover:text-blue-600">Brands</a>
-            <a href="#contact" class="block text-gray-800 font-bold hover:text-blue-600">Contact</a>
+            <a href="#contact" class="block text-gray-800 font-bold hover:text-blue-600">Contact Us</a>
         </div>
     </header>
 
-    <!-- 1. Hero Section -->
-    <section id="home" class="relative min-h-[85vh] flex items-center overflow-hidden">
-        <div class="absolute inset-0 bg-cover bg-center animate-hero-bg" style="background-image: url('hero-bg.jpg');"></div>
-        <div class="absolute inset-0 bg-gradient-to-r from-black/60 via-black/40 to-black/60"></div>
+    <!-- 1. Hero Section (Model Style with Right Blue Highlight Box) -->
+    <section id="home" class="relative min-h-[85vh] flex items-center overflow-hidden bg-gray-900 text-white">
+        <div class="absolute inset-0 bg-cover bg-center animate-hero-bg opacity-50" style="background-image: url('hero-bg.jpg');"></div>
+        <div class="absolute inset-0 bg-gradient-to-r from-black/80 via-black/50 to-black/30"></div>
 
-        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 text-center md:text-left z-10">
-            <div class="max-w-3xl">
-                <span class="inline-block bg-blue-600 text-white text-xs uppercase tracking-widest font-bold px-4 py-1.5 rounded-full mb-4 shadow-lg">Leading HVAC & MEP Partner in Qatar</span>
-                <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight mb-6 leading-tight drop-shadow-md">
-                    Stay Cool & Comfortable All Year Round
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 w-full z-10 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+            <div class="lg:col-span-7">
+                <h1 class="text-3xl sm:text-5xl lg:text-6xl font-black tracking-tight mb-6 leading-tight uppercase">
+                    AIR CONDITIONING <br>& MEP SERVICES QATAR
                 </h1>
-                <p class="text-lg md:text-xl text-gray-100 mb-8 leading-relaxed drop-shadow">
-                    Top-notch air conditioning, electrical & plumbing solutions for residential and commercial clients in Qatar. Quality installation, fast repair, and guaranteed performance.
+                <p class="text-base sm:text-lg text-gray-200 mb-8 leading-relaxed max-w-2xl">
+                    Top-notch air conditioning sales, fast installation, expert electrical & plumbing solutions for residential and commercial clients across Qatar.
                 </p>
-                <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
-                    <a href="#contact" class="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-xl font-bold transition text-center shadow-lg shadow-blue-600/40">Get Immediate Service</a>
-                    <a href="https://wa.me/97430711221" target="_blank" class="bg-green-600 hover:bg-green-700 text-white px-8 py-4 rounded-xl font-bold transition text-center shadow-lg shadow-green-600/30 flex items-center justify-center gap-2">
-                        <i class="fa-brands fa-whatsapp text-xl"></i> WhatsApp Us
-                    </a>
+                <a href="#contact" class="inline-block bg-red-600 hover:bg-red-700 text-white px-8 py-3.5 rounded font-bold uppercase transition tracking-wider shadow-lg">GET A QUOTE</a>
+            </div>
+
+            <!-- Right Cyan/Blue Highlight Card (Model Style) -->
+            <div class="lg:col-span-5">
+                <div class="bg-sky-500 text-white p-8 rounded shadow-2xl border border-sky-400">
+                    <h3 class="text-xl sm:text-2xl font-black uppercase mb-4 tracking-wide">
+                        Cool Land Air Conditioning Trading & Services L.L.C
+                    </h3>
+                    <p class="text-sm sm:text-base leading-relaxed text-sky-50">
+                        We represent top brands such as Blue Star, Carrier, O General, Super General, Midea, Daikin, Gree, and Trane to ensure our customers get the best quality AC units, spare parts, and dependable technical maintenance services.
+                    </p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- 2. About Us Section -->
-    <section id="about" class="relative py-24 bg-cover bg-center bg-fixed" style="background-image: url('hero-bg.jpg');">
-        <div class="absolute inset-0 bg-gray-950/80"></div>
-        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 z-10">
+    <section id="about" class="py-20 bg-white text-gray-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-3xl mx-auto mb-16">
-                <h2 class="text-4xl font-extrabold text-white tracking-wide uppercase">ABOUT US</h2>
-                <div class="w-20 h-1 bg-blue-500 mx-auto mt-4 rounded"></div>
-                <p class="mt-6 text-gray-200 text-lg leading-relaxed">
-                    Cool Land, we specialize in delivering top-notch air conditioning solutions for both residential and commercial clients. Whether it's sales, installation, or maintenance, our team of certified professionals ensures efficient, affordable, and reliable cooling—every time.
-                </p>
-                <p class="mt-4 text-blue-400 font-semibold">
-                    We're passionate about comfort, committed to quality, and proud to be your go-to AC partner.
+                <h2 class="text-3xl sm:text-4xl font-black uppercase tracking-wide text-sky-500">About Us</h2>
+                <div class="w-16 h-1 bg-sky-500 mx-auto mt-3 rounded"></div>
+                <p class="mt-6 text-gray-600 text-base sm:text-lg leading-relaxed">
+                    Cool Land is a one-stop shop for all your HVAC and MEP needs in Qatar. We offer a wide range of products including new and used split ACs, cassette units, ducted systems, window ACs, portable coolers, along with complete electrical and plumbing solutions.
                 </p>
             </div>
 
-            <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-                <div class="bg-blue-950/70 border border-blue-500/40 p-8 rounded-2xl shadow-xl backdrop-blur-md">
-                    <div class="w-14 h-14 bg-blue-600 text-white rounded-xl flex items-center justify-center mb-6 text-2xl shadow-lg">
-                        <i class="fa-solid fa-bullseye"></i>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="p-8 border border-gray-200 rounded-xl bg-gray-50 shadow-sm">
+                    <div class="w-12 h-12 bg-sky-500 text-white rounded-lg flex items-center justify-center mb-4 text-xl">
+                        <i class="fa-solid fa-award"></i>
                     </div>
-                    <h3 class="text-2xl font-bold text-white mb-3">Mission</h3>
-                    <p class="text-gray-200 leading-relaxed">To provide fast, reliable, and affordable air conditioning services that keep our customers cool and comfortable all year round.</p>
+                    <h3 class="text-xl font-bold mb-2">Years of Experience</h3>
+                    <p class="text-gray-600">With extensive experience in the Qatar market, we have established ourselves as a trusted name in delivering high-quality cooling and technical services.</p>
                 </div>
 
-                <div class="bg-blue-950/70 border border-blue-600/40 p-8 rounded-2xl shadow-xl backdrop-blur-md">
-                    <div class="w-14 h-14 bg-blue-600 text-white rounded-xl flex items-center justify-center mb-6 text-2xl shadow-lg">
-                        <i class="fa-solid fa-lightbulb"></i>
+                <div class="p-8 border border-gray-200 rounded-xl bg-gray-50 shadow-sm">
+                    <div class="w-12 h-12 bg-sky-500 text-white rounded-lg flex items-center justify-center mb-4 text-xl">
+                        <i class="fa-solid fa-shield-halved"></i>
                     </div>
-                    <h3 class="text-2xl font-bold text-white mb-3">Vision</h3>
-                    <p class="text-gray-200 leading-relaxed">To be a trusted name in air conditioning, known for quality service, expert solutions, and customer satisfaction.</p>
+                    <h3 class="text-xl font-bold mb-2">Service and Support</h3>
+                    <p class="text-gray-600">Our team of highly qualified engineers and technicians ensure that our clients get the best service and support when it comes to installation and maintenance.</p>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- Call to Action Banner (Model Style) -->
+    <section class="py-16 bg-sky-500 text-white text-center">
+        <div class="max-w-7xl mx-auto px-4">
+            <span class="text-xs uppercase tracking-widest font-bold bg-sky-600 px-3 py-1 rounded">DELIVERING INNOVATION</span>
+            <h2 class="text-3xl sm:text-4xl font-black uppercase tracking-wide mt-3 mb-4">TO GET A QUOTE</h2>
+            <p class="text-lg text-sky-100 mb-8 max-w-xl mx-auto">Feel free to reach out to us today and discover how we can support your business or home cooling needs.</p>
+            <a href="#contact" class="inline-block bg-black hover:bg-gray-900 text-white px-8 py-3.5 rounded font-bold uppercase transition tracking-wider shadow-lg">CONTACT US TODAY →</a>
+        </div>
+    </section>
+
     <!-- 3. AC Sales & Products Section -->
-    <section id="products" class="relative py-24 bg-cover bg-center bg-fixed" style="background-image: url('split-ac.jpg');">
-        <div class="absolute inset-0 bg-gray-950/90"></div>
-        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 z-10">
+    <section id="products" class="py-20 bg-gray-50 text-gray-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-3xl mx-auto mb-16">
-                <h2 class="text-3xl font-extrabold text-white sm:text-4xl tracking-wide uppercase">New & Used Air Conditioners</h2>
-                <div class="w-20 h-1 bg-blue-500 mx-auto mt-4 rounded"></div>
-                <p class="mt-4 text-gray-300 text-lg">We offer new and pre-owned AC units at the best prices across Qatar.</p>
-            </div>
-
-            <div class="grid md:grid-cols-2 gap-8 mb-16">
-                <div class="bg-gray-900/85 p-8 rounded-2xl shadow-xl border border-gray-800 backdrop-blur-md">
-                    <h3 class="text-2xl font-bold text-blue-400 mb-4 flex items-center gap-3">
-                        <i class="fa-solid fa-box text-blue-500"></i> New Air Conditioners for Sale
-                    </h3>
-                    <p class="text-gray-300 mb-6">Upgrade your space with the latest energy-saving cooling technology.</p>
-                    <ul class="space-y-3 text-gray-300">
-                        <li class="flex items-center gap-3"><i class="fa-solid fa-check text-blue-400"></i> Split Type ACs & Inverter ACs</li>
-                        <li class="flex items-center gap-3"><i class="fa-solid fa-check text-blue-400"></i> Cassette ACs & Ceiling Suspended</li>
-                        <li class="flex items-center gap-3"><i class="fa-solid fa-check text-blue-400"></i> Ducted Systems & Central AC</li>
-                        <li class="flex items-center gap-3"><i class="fa-solid fa-check text-blue-400"></i> Heavy-duty Window ACs</li>
-                    </ul>
-                </div>
-
-                <div class="bg-gray-900/85 p-8 rounded-2xl shadow-xl border border-gray-800 backdrop-blur-md">
-                    <h3 class="text-2xl font-bold text-blue-400 mb-4 flex items-center gap-3">
-                        <i class="fa-solid fa-recycle text-blue-500"></i> Used Air Conditioners for Sale
-                    </h3>
-                    <p class="text-gray-300 mb-6">Reliable and budget-friendly pre-owned units, fully tested and ready to cool.</p>
-                    <ul class="space-y-3 text-gray-300">
-                        <li class="flex items-center gap-3"><i class="fa-solid fa-check text-blue-400"></i> Lightly used, top-condition AC units</li>
-                        <li class="flex items-center gap-3"><i class="fa-solid fa-check text-blue-400"></i> Professionally cleaned and serviced</li>
-                        <li class="flex items-center gap-3"><i class="fa-solid fa-check text-blue-400"></i> Guaranteed performance at affordable rates</li>
-                        <li class="flex items-center gap-3"><i class="fa-solid fa-check text-blue-400"></i> Ideal for rentals, offices, or temporary setups</li>
-                    </ul>
-                </div>
+                <h2 class="text-3xl sm:text-4xl font-black uppercase tracking-wide text-sky-500">New & Used Air Conditioners</h2>
+                <div class="w-16 h-1 bg-sky-500 mx-auto mt-3 rounded"></div>
+                <p class="mt-4 text-gray-600 text-lg">We offer new and pre-owned AC units at the best prices across Qatar.</p>
             </div>
 
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
-                <div class="bg-gray-900 rounded-xl overflow-hidden shadow-lg border border-gray-800 hover:border-blue-500 transition">
+                <div class="bg-white rounded-xl overflow-hidden shadow border border-gray-200">
                     <img src="split-ac.jpg" alt="Split AC" class="h-48 w-full object-cover" onerror="this.src='https://via.placeholder.com/300x200?text=Split+AC'">
-                    <div class="p-4 text-center">
-                        <h4 class="font-bold text-lg text-white">Split AC</h4>
-                    </div>
+                    <div class="p-4 text-center font-bold">Split AC</div>
                 </div>
-
-                <div class="bg-gray-900 rounded-xl overflow-hidden shadow-lg border border-gray-800 hover:border-blue-500 transition">
+                <div class="bg-white rounded-xl overflow-hidden shadow border border-gray-200">
                     <img src="cassette-ac.jpg" alt="Cassette AC" class="h-48 w-full object-cover" onerror="this.src='https://via.placeholder.com/300x200?text=Cassette+AC'">
-                    <div class="p-4 text-center">
-                        <h4 class="font-bold text-lg text-white">Cassette AC</h4>
-                    </div>
+                    <div class="p-4 text-center font-bold">Cassette AC</div>
                 </div>
-
-                <div class="bg-gray-900 rounded-xl overflow-hidden shadow-lg border border-gray-800 hover:border-blue-500 transition">
+                <div class="bg-white rounded-xl overflow-hidden shadow border border-gray-200">
                     <img src="ducted-ac.jpg" alt="Ducted Split" class="h-48 w-full object-cover" onerror="this.src='https://via.placeholder.com/300x200?text=Ducted+Split'">
-                    <div class="p-4 text-center">
-                        <h4 class="font-bold text-lg text-white">Ducted Split</h4>
-                    </div>
+                    <div class="p-4 text-center font-bold">Ducted Split</div>
                 </div>
-
-                <div class="bg-gray-900 rounded-xl overflow-hidden shadow-lg border border-gray-800 hover:border-blue-500 transition">
+                <div class="bg-white rounded-xl overflow-hidden shadow border border-gray-200">
                     <img src="Window-AC.jpg" alt="Window AC" class="h-48 w-full object-cover" onerror="this.src='https://via.placeholder.com/300x200?text=Window+AC'">
-                    <div class="p-4 text-center">
-                        <h4 class="font-bold text-lg text-white">Window AC</h4>
-                    </div>
+                    <div class="p-4 text-center font-bold">Window AC</div>
                 </div>
-
-                <div class="bg-gray-900 rounded-xl overflow-hidden shadow-lg border border-gray-800 hover:border-blue-500 transition">
+                <div class="bg-white rounded-xl overflow-hidden shadow border border-gray-200">
                     <img src="portable-ac.jpg" alt="Portable AC" class="h-48 w-full object-cover" onerror="this.src='https://via.placeholder.com/300x200?text=Portable+AC'">
-                    <div class="p-4 text-center">
-                        <h4 class="font-bold text-lg text-white">Portable AC</h4>
-                    </div>
+                    <div class="p-4 text-center font-bold">Portable AC</div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- 4. Services Section -->
-    <section id="services" class="relative py-24 bg-cover bg-center bg-fixed" style="background-image: url('ducted-ac.jpg');">
-        <div class="absolute inset-0 bg-gray-950/85"></div>
-        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 z-10">
+    <section id="services" class="py-20 bg-white text-gray-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-3xl mx-auto mb-16">
-                <h2 class="text-3xl font-extrabold text-white sm:text-4xl tracking-wide uppercase">OUR SERVICES</h2>
-                <div class="w-20 h-1 bg-blue-500 mx-auto mt-4 rounded"></div>
-                <p class="mt-4 text-gray-300 text-lg">From installation to troubleshooting and AMC contracts.</p>
+                <h2 class="text-3xl sm:text-4xl font-black uppercase tracking-wide text-sky-500">Service We Provide</h2>
+                <div class="w-16 h-1 bg-sky-500 mx-auto mt-3 rounded"></div>
+                <p class="mt-4 text-gray-600 text-lg">Cool Land specializes in complete HVAC, electrical, and plumbing services.</p>
             </div>
 
             <div class="grid md:grid-cols-3 gap-8">
-                <div class="p-6 border border-gray-800/80 rounded-2xl bg-gray-900/85 backdrop-blur-md hover:border-blue-500 transition">
-                    <i class="fa-solid fa-tools text-3xl text-blue-500 mb-4"></i>
-                    <h3 class="text-xl font-bold text-white mb-2">AC Installation</h3>
-                    <p class="text-gray-300">Professional installation for homes, offices, and commercial spaces for split, window, ducted & central systems.</p>
+                <div class="p-6 border border-gray-200 rounded-xl bg-gray-50">
+                    <i class="fa-solid fa-tools text-3xl text-sky-500 mb-4"></i>
+                    <h3 class="text-xl font-bold mb-2">AC Installation</h3>
+                    <p class="text-gray-600">Professional setup for split, window, cassette, and ducted central cooling systems.</p>
                 </div>
-
-                <div class="p-6 border border-gray-800/80 rounded-2xl bg-gray-900/85 backdrop-blur-md hover:border-blue-500 transition">
-                    <i class="fa-solid fa-snowflake text-3xl text-blue-500 mb-4"></i>
-                    <h3 class="text-xl font-bold text-white mb-2">AC Maintenance</h3>
-                    <p class="text-gray-300">Keep your AC running at peak performance with regular check-ups, filter cleanings, and system diagnostics.</p>
+                <div class="p-6 border border-gray-200 rounded-xl bg-gray-50">
+                    <i class="fa-solid fa-snowflake text-3xl text-sky-500 mb-4"></i>
+                    <h3 class="text-xl font-bold mb-2">AC Maintenance</h3>
+                    <p class="text-gray-600">Regular servicing, coil cleaning, and performance optimization checks.</p>
                 </div>
-
-                <div class="p-6 border border-gray-800/80 rounded-2xl bg-gray-900/85 backdrop-blur-md hover:border-blue-500 transition">
-                    <i class="fa-solid fa-screwdriver-wrench text-3xl text-blue-500 mb-4"></i>
-                    <h3 class="text-xl font-bold text-white mb-2">Repair & Troubleshooting</h3>
-                    <p class="text-gray-300">Diagnosing and fixing cooling issues, noisy units, water leaks, and compressor failures fast.</p>
-                </div>
-
-                <div class="p-6 border border-gray-800/80 rounded-2xl bg-gray-900/85 backdrop-blur-md hover:border-blue-500 transition">
-                    <i class="fa-solid fa-wind text-3xl text-blue-500 mb-4"></i>
-                    <h3 class="text-xl font-bold text-white mb-2">AC Duct Cleaning</h3>
-                    <p class="text-gray-300">Deep duct cleaning services to remove dust, allergens, and bacteria buildup for cleaner indoor air.</p>
-                </div>
-
-                <div class="p-6 border border-gray-800/80 rounded-2xl bg-gray-900/85 backdrop-blur-md hover:border-blue-500 transition">
-                    <i class="fa-solid fa-gas-pump text-3xl text-blue-500 mb-4"></i>
-                    <h3 class="text-xl font-bold text-white mb-2">AC Gas Refilling</h3>
-                    <p class="text-gray-300">Quality refrigerant gas recharge (R22, R410a, R32) for maximum cooling efficiency and optimal pressure.</p>
-                </div>
-
-                <div class="p-6 border border-gray-800/80 rounded-2xl bg-gray-900/85 backdrop-blur-md hover:border-blue-500 transition">
-                    <i class="fa-solid fa-file-contract text-3xl text-blue-500 mb-4"></i>
-                    <h3 class="text-xl font-bold text-white mb-2">Annual Maintenance (AMC)</h3>
-                    <p class="text-gray-300">Hassle-free, customized annual maintenance contracts for residential villas, residential buildings, and corporate offices.</p>
+                <div class="p-6 border border-gray-200 rounded-xl bg-gray-50">
+                    <i class="fa-solid fa-screwdriver-wrench text-3xl text-sky-500 mb-4"></i>
+                    <h3 class="text-xl font-bold mb-2">Repair & Gas Refill</h3>
+                    <p class="text-gray-600">Fast troubleshooting, leak detection, and refrigerant gas refilling.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- 5. Electrical Services Section -->
-    <section id="electrical" class="relative py-24 bg-cover bg-center bg-fixed" style="background-image: url('electrical-work.jpg');">
-        <div class="absolute inset-0 bg-gray-950/90"></div>
-        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 z-10">
+    <!-- 5. Electrical & Plumbing Section -->
+    <section id="electrical" class="py-20 bg-gray-50 text-gray-900 border-t border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16">
             <div class="grid md:grid-cols-2 gap-12 items-center">
-                <div class="bg-gray-900/80 p-8 rounded-2xl border border-gray-800 backdrop-blur-md">
-                    <span class="text-blue-400 font-bold uppercase tracking-wider text-sm">Professional Electrical Works</span>
-                    <h2 class="text-3xl font-extrabold text-white sm:text-4xl mt-2 mb-6 uppercase tracking-wide">ELECTRICAL</h2>
-                    <p class="text-gray-300 leading-relaxed mb-6">
-                        At COOL LAND, we specialize in providing comprehensive air conditioning and electrical solutions for both residential and commercial properties. Our highly trained electricians work to ensure your home or business stays safe, energy-efficient, and fully operational.
-                    </p>
-                    <ul class="space-y-3 text-gray-300 mb-8">
-                        <li class="flex items-center gap-3"><i class="fa-solid fa-bolt text-yellow-400"></i> DB Box, Circuit Breaker & Panel Wiring</li>
-                        <li class="flex items-center gap-3"><i class="fa-solid fa-bolt text-yellow-400"></i> Lighting & Power Socket Installations</li>
-                        <li class="flex items-center gap-3"><i class="fa-solid fa-bolt text-yellow-400"></i> Fault Diagnosis, Short Circuit Repair & Safety Audits</li>
-                    </ul>
+                <div>
+                    <span class="text-sky-500 font-bold uppercase tracking-wider text-sm">MEP Works</span>
+                    <h2 class="text-3xl font-black uppercase tracking-wide mt-2 mb-4">Electrical Services</h2>
+                    <p class="text-gray-600 leading-relaxed mb-6">Complete electrical installations, DB wiring, socket fittings, safety audits, and emergency short-circuit troubleshooting for residential and commercial properties.</p>
                 </div>
                 <div>
-                    <img src="electrical-work.jpg" alt="Electrical Work" class="rounded-2xl shadow-2xl border border-gray-800 w-full object-cover h-96" onerror="this.src='https://via.placeholder.com/600x400?text=Electrical+Work'">
+                    <img src="electrical-work.jpg" alt="Electrical Work" class="rounded-xl shadow-lg w-full h-80 object-cover" onerror="this.src='https://via.placeholder.com/600x400?text=Electrical'">
                 </div>
             </div>
-        </div>
-    </section>
 
-    <!-- 6. Plumbing Services Section -->
-    <section id="plumbing" class="relative py-24 bg-cover bg-center bg-fixed" style="background-image: url('plumbing-work.jpg');">
-        <div class="absolute inset-0 bg-gray-950/90"></div>
-        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 z-10">
-            <div class="grid md:grid-cols-2 gap-12 items-center">
+            <div id="plumbing" class="grid md:grid-cols-2 gap-12 items-center">
                 <div class="order-2 md:order-1">
-                    <img src="plumbing-work.jpg" alt="Plumbing Work" class="rounded-2xl shadow-2xl border border-gray-800 w-full object-cover h-96" onerror="this.src='https://via.placeholder.com/600x400?text=Plumbing+Work'">
+                    <img src="plumbing-work.jpg" alt="Plumbing Work" class="rounded-xl shadow-lg w-full h-80 object-cover" onerror="this.src='https://via.placeholder.com/600x400?text=Plumbing'">
                 </div>
-                <div class="order-1 md:order-2 bg-gray-900/80 p-8 rounded-2xl border border-gray-800 backdrop-blur-md">
-                    <span class="text-blue-400 font-bold uppercase tracking-wider text-sm">Expert Plumbing Solutions</span>
-                    <h2 class="text-3xl font-extrabold text-white sm:text-4xl mt-2 mb-6 uppercase tracking-wide">PLUMBING</h2>
-                    <p class="text-gray-300 leading-relaxed mb-6">
-                        At COOL LAND, we provide expert air conditioning and plumbing solutions to ensure your home or business runs smoothly and comfortably. Our team is committed to delivering reliable, efficient, and affordable services.
+                <div class="order-1 md:order-2">
+                    <span class="text-sky-500 font-bold uppercase tracking-wider text-sm">Utility Solutions</span>
+                    <h2 class="text-3xl font-black uppercase tracking-wide mt-2 mb-4">Plumbing Services</h2>
+                    <p class="text-gray-600 leading-relaxed mb-6">Professional pipe leak repairs, sanitary fixture installations, water heater setups, and water pump maintenance services available across Doha.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. Brands Section (Model Style with Cyan Background) -->
+    <section id="brands" class="py-20 bg-sky-500 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl sm:text-4xl font-black uppercase tracking-wide mb-3">Our Principles & Brands</h2>
+                <div class="w-16 h-1 bg-white mx-auto mb-4 rounded"></div>
+                <p class="text-sky-100 text-lg">We supply and deal in top globally recognized brands.</p>
+            </div>
+
+            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4">
+                <div class="bg-white text-gray-900 p-4 rounded shadow flex items-center justify-center font-black h-20">BLUE STAR</div>
+                <div class="bg-white text-gray-900 p-4 rounded shadow flex items-center justify-center font-serif italic font-bold h-20 text-xl">Carrier</div>
+                <div class="bg-white text-red-600 p-4 rounded shadow flex items-center justify-center font-black h-20">O GENERAL</div>
+                <div class="bg-white text-gray-900 p-4 rounded shadow flex items-center justify-center font-bold text-sm h-20 text-center">SUPER GENERAL</div>
+                <div class="bg-white text-blue-800 p-4 rounded shadow flex items-center justify-center font-black h-20">FAWAZ</div>
+                <div class="bg-white text-sky-500 p-4 rounded shadow flex items-center justify-center font-black h-20 text-xl">Midea</div>
+                <div class="bg-white text-blue-600 p-4 rounded shadow flex items-center justify-center font-black h-20 text-xl">DAIKIN</div>
+                <div class="bg-white text-blue-700 p-4 rounded shadow flex items-center justify-center font-black h-20 text-xl">GREE</div>
+                <div class="bg-white text-blue-900 p-4 rounded shadow flex items-center justify-center font-bold h-20">National</div>
+                <div class="bg-white text-red-600 p-4 rounded shadow flex items-center justify-center font-black h-20 text-xl">TRANE</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. Contact & Drop A Line Section (Model Style) -->
+    <section id="contact" class="py-20 bg-white text-gray-900 border-t border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 gap-12 items-start">
+                
+                <!-- Form Side -->
+                <div class="bg-gray-50 p-8 rounded-xl border border-gray-200 shadow-sm">
+                    <h3 class="text-2xl font-black uppercase tracking-wide mb-2">Drop A Line</h3>
+                    <p class="text-gray-600 text-sm mb-6">Your email address will not be published. Required fields are marked *</p>
+                    
+                    <form id="whatsapp-form" onsubmit="sendToWhatsApp(event)" class="space-y-4">
+                        <div>
+                            <input type="text" id="client-name" required placeholder="Your Name *" class="w-full px-4 py-3 rounded border border-gray-300 bg-white focus:outline-none focus:border-sky-500">
+                        </div>
+                        <div>
+                            <input type="tel" id="client-phone" required placeholder="Phone Number *" class="w-full px-4 py-3 rounded border border-gray-300 bg-white focus:outline-none focus:border-sky-500">
+                        </div>
+                        <div>
+                            <select id="client-service" class="w-full px-4 py-3 rounded border border-gray-300 bg-white focus:outline-none focus:border-sky-500">
+                                <option>AC Purchase / Sales</option>
+                                <option>AC Maintenance / Repair</option>
+                                <option>Electrical Services</option>
+                                <option>Plumbing Services</option>
+                            </select>
+                        </div>
+                        <div>
+                            <textarea id="client-msg" rows="4" placeholder="Your Message *" class="w-full px-4 py-3 rounded border border-gray-300 bg-white focus:outline-none focus:border-sky-500"></textarea>
+                        </div>
+                        <button type="submit" class="bg-red-600 hover:bg-red-700 text-white font-bold uppercase px-8 py-3.5 rounded transition shadow">
+                            SEND QUESTIONS →
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Info Box Side (Model Cyan Box) -->
+                <div class="bg-sky-500 text-white p-8 rounded-xl shadow-lg">
+                    <h3 class="text-2xl font-black uppercase tracking-wide mb-3">Let's Start a Project</h3>
+                    <p class="text-sky-100 mb-8 leading-relaxed">
+                        Give us a call or drop by anytime, we endeavor to answer all enquiries within 24 hours on business days. We will be happy to answer your questions.
                     </p>
-                    <ul class="space-y-3 text-gray-300 mb-8">
-                        <li class="flex items-center gap-3"><i class="fa-solid fa-droplet text-blue-400"></i> Pipe Leak Detection & Rapid Repair</li>
-                        <li class="flex items-center gap-3"><i class="fa-solid fa-droplet text-blue-400"></i> Sanitary Fixtures & Water Heater Installation</li>
-                        <li class="flex items-center gap-3"><i class="fa-solid fa-droplet text-blue-400"></i> Water Pump Maintenance & 24/7 Emergency Service</li>
-                    </ul>
+                    <div class="space-y-4 text-sm sm:text-base">
+                        <div class="flex items-center gap-4">
+                            <i class="fa-solid fa-phone text-xl w-6"></i>
+                            <div>
+                                <p class="font-bold">PHONE</p>
+                                <p class="text-sky-100">+974 3071 1221 / +974 3071 1223</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <i class="fa-solid fa-envelope text-xl w-6"></i>
+                            <div>
+                                <p class="font-bold">MAIL</p>
+                                <p class="text-sky-100">coollandacqtr@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <i class="fa-solid fa-location-dot text-xl w-6"></i>
+                            <div>
+                                <p class="font-bold">LOCATION</p>
+                                <p class="text-sky-100">Doha, Qatar</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+
             </div>
         </div>
     </section>
 
-    <!-- 7. Brands Section -->
-    <section id="brands" class="relative py-24 bg-gradient-to-b from-blue-950 via-gray-950 to-blue-950 text-white overflow-hidden border-t border-gray-800">
-        <div class="absolute inset-0 opacity-20 bg-cover bg-center pointer-events-none" style="background-image: url('hero-bg.jpg');"></div>
-
-        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 z-10">
-            <div class="text-center md:text-left mb-12">
-                <h2 class="text-4xl md:text-5xl font-black tracking-wider uppercase mb-4 text-white drop-shadow-md">
-                    STAY COOL WITH THE BEST AC BRANDS
-                </h2>
-                <h3 class="text-xl md:text-2xl font-bold text-blue-400 uppercase tracking-wide mb-3">
-                    WE DEAL IN THE MOST TRUSTED AC BRANDS
-                </h3>
-                <p class="text-gray-300 text-lg max-w-3xl">
-                    Cool Land brings you a wide selection of top-performing, energy-efficient air conditioners from globally recognized brands:
-                </p>
-            </div>
-
-            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4 md:gap-6 mt-8">
-                <div class="bg-white p-6 rounded-lg shadow-lg flex items-center justify-center h-28 hover:scale-105 transition transform">
-                    <span class="font-black text-blue-900 text-xl tracking-tight flex items-center gap-1">
-                        <i class="fa-solid fa-star text-blue-600 text-base"></i> BLUE STAR
-                    </span>
-                </div>
-
-                <div class="bg-white p-6 rounded-lg shadow-lg flex items-center justify-center h-28 hover:scale-105 transition transform">
-                    <span class="font-serif italic font-extrabold text-blue-950 text-2xl tracking-wide">
-                        Carrier
-                    </span>
-                </div>
-
-                <div class="bg-white p-6 rounded-lg shadow-lg flex items-center justify-center h-28 hover:scale-105 transition transform">
-                    <span class="font-extrabold text-red-600 text-xl tracking-tighter">
-                        <i class="fa-solid fa-power-off text-red-500 mr-1"></i>GENERAL
-                    </span>
-                </div>
-
-                <div class="bg-white p-6 rounded-lg shadow-lg flex items-center justify-center h-28 hover:scale-105 transition transform">
-                    <span class="font-bold text-gray-900 text-sm tracking-wider uppercase text-center border-2 border-gray-900 px-2 py-1 rounded">
-                        Super General
-                    </span>
-                </div>
-
-                <div class="bg-white p-6 rounded-lg shadow-lg flex items-center justify-center h-28 hover:scale-105 transition transform">
-                    <span class="font-extrabold text-blue-800 text-xl tracking-wider flex items-center gap-1">
-                        <i class="fa-solid fa-wind text-blue-500"></i> FAWAZ
-                    </span>
-                </div>
-
-                <div class="bg-white p-6 rounded-lg shadow-lg flex items-center justify-center h-28 hover:scale-105 transition transform">
-                    <span class="font-extrabold text-sky-500 text-2xl tracking-tight">
-                        Midea
-                    </span>
-                </div>
-
-                <div class="bg-white p-6 rounded-lg shadow-lg flex items-center justify-center h-28 hover:scale-105 transition transform">
-                    <span class="font-black text-blue-600 text-2xl tracking-widest uppercase">
-                        DAIKIN
-                    </span>
-                </div>
-
-                <div class="bg-white p-6 rounded-lg shadow-lg flex items-center justify-center h-28 hover:scale-105 transition transform">
-                    <span class="font-black text-blue-700 text-2xl tracking-wider flex items-center gap-1">
-                        <i class="fa-solid fa-leaf text-green-500"></i> GREE
-                    </span>
-                </div>
-
-                <div class="bg-white p-6 rounded-lg shadow-lg flex items-center justify-center h-28 hover:scale-105 transition transform text-center">
-                    <span class="font-bold text-blue-900 text-lg tracking-wide border-b-2 border-red-600 pb-0.5">
-                        National
-                    </span>
-                </div>
-
-                <div class="bg-white p-6 rounded-lg shadow-lg flex items-center justify-center h-28 hover:scale-105 transition transform">
-                    <span class="font-black text-red-600 text-2xl tracking-widest uppercase flex items-center gap-1">
-                        <i class="fa-solid fa-square text-red-600 text-sm"></i> TRANE
-                    </span>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- 8. Contact Section -->
-    <section id="contact" class="py-20 bg-gray-900 text-white border-t border-gray-800">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center max-w-3xl mx-auto mb-16">
-                <h2 class="text-3xl font-extrabold sm:text-4xl uppercase tracking-wide">Get In Touch</h2>
-                <p class="mt-4 text-gray-400">Contact us today for quick bookings, queries, or emergency assistance in Qatar.</p>
-            </div>
-
-            <div class="grid md:grid-cols-2 gap-12">
-                <div class="space-y-6">
-                    <div class="flex items-start gap-4">
-                        <div class="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center text-xl flex-shrink-0 shadow-lg shadow-blue-600/30">
-                            <i class="fa-solid fa-phone"></i>
-                        </div>
-                        <div>
-                            <h4 class="text-lg font-bold">Call Us</h4>
-                            <p class="text-gray-300"><a href="tel:+97430711221" class="hover:text-blue-400 transition">+974 3071 1221</a></p>
-                            <p class="text-gray-300"><a href="tel:+97430711223" class="hover:text-blue-400 transition">+974 3071 1223</a></p>
-                        </div>
-                    </div>
-
-                    <div class="flex items-start gap-4">
-                        <div class="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center text-xl flex-shrink-0 shadow-lg shadow-blue-600/30">
-                            <i class="fa-solid fa-envelope"></i>
-                        </div>
-                        <div>
-                            <h4 class="text-lg font-bold">Email Us</h4>
-                            <p class="text-gray-300"><a href="mailto:coollandacqtr@gmail.com" class="hover:text-blue-400 transition">coollandacqtr@gmail.com</a></p>
-                        </div>
-                    </div>
-
-                    <div class="flex items-start gap-4">
-                        <div class="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center text-xl flex-shrink-0 shadow-lg shadow-blue-600/30">
-                            <i class="fa-solid fa-location-dot"></i>
-                        </div>
-                        <div>
-                            <h4 class="text-lg font-bold">Location</h4>
-                            <p class="text-gray-300">Doha, State of Qatar</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Contact Form -->
-                <form class="space-y-4 bg-gray-950 p-8 rounded-2xl border border-gray-800 shadow-xl">
-                    <div>
-                        <label class="block text-sm font-medium text-gray-300 mb-1">Your Name</label>
-                        <input type="text" placeholder="Full Name" class="w-full px-4 py-3 rounded-lg bg-gray-900 text-white border border-gray-700 focus:outline-none focus:border-blue-500">
-                    </div>
-                    <div>
-                        <label class="block text-sm font-medium text-gray-300 mb-1">Phone Number</label>
-                        <input type="tel" placeholder="+974 XXXX XXXX" class="w-full px-4 py-3 rounded-lg bg-gray-900 text-white border border-gray-700 focus:outline-none focus:border-blue-500">
-                    </div>
-                    <div>
-                        <label class="block text-sm font-medium text-gray-300 mb-1">Service Required</label>
-                        <select class="w-full px-4 py-3 rounded-lg bg-gray-900 text-white border border-gray-700 focus:outline-none focus:border-blue-500">
-                            <option>AC Purchase / Sales</option>
-                            <option>AC Maintenance / Repair</option>
-                            <option>Electrical Services</option>
-                            <option>Plumbing Services</option>
-                        </select>
-                    </div>
-                    <div>
-                        <label class="block text-sm font-medium text-gray-300 mb-1">Message</label>
-                        <textarea rows="4" placeholder="How can we help you?" class="w-full px-4 py-3 rounded-lg bg-gray-900 text-white border border-gray-700 focus:outline-none focus:border-blue-500"></textarea>
-                    </div>
-                    <button type="button" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 rounded-lg transition shadow-lg shadow-blue-600/30">Send Message</button>
-                </form>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="bg-black text-gray-500 py-8 border-t border-gray-900 text-center">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <!-- Footer (Model Style) -->
+    <footer class="bg-gray-900 text-gray-400 py-8 border-t border-gray-800 text-center text-sm">
+        <div class="max-w-7xl mx-auto px-4">
             <p>&copy; 2026 COOL LAND AIRCONDITIONING TRADING AND SERVICES. All rights reserved.</p>
         </div>
     </footer>
 
-    <!-- Mobile Menu Script -->
+    <!-- Script for WhatsApp Form Submission -->
     <script>
         const menuBtn = document.getElementById('menu-btn');
         const mobileMenu = document.getElementById('mobile-menu');
@@ -463,6 +344,19 @@
         menuBtn.addEventListener('click', () => {
             mobileMenu.classList.toggle('hidden');
         });
+
+        function sendToWhatsApp(e) {
+            e.preventDefault();
+            const name = document.getElementById('client-name').value;
+            const phone = document.getElementById('client-phone').value;
+            const service = document.getElementById('client-service').value;
+            const msg = document.getElementById('client-msg').value;
+
+            const text = `Hello Cool Land,%0A*Name:* ${name}%0A*Phone:* ${phone}%0A*Service:* ${service}%0A*Message:* ${msg}`;
+            const whatsappUrl = `https://wa.me/97430711221?text=${text}`;
+            
+            window.open(whatsappUrl, '_blank');
+        }
     </script>
 </body>
 </html>
