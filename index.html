@@ -19,7 +19,7 @@
 </head>
 <body class="bg-gray-950 text-gray-100 font-sans antialiased">
 
-    <!-- Header / Navbar (Clean White Header for Logo Visibility) -->
+    <!-- Header / Navbar -->
     <header class="sticky top-0 z-50 bg-white border-b border-gray-200 shadow-md">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center h-20">
             <a href="#" class="flex items-center gap-3">
@@ -64,7 +64,7 @@
     <!-- 1. Hero Section -->
     <section id="home" class="relative min-h-[85vh] flex items-center overflow-hidden">
         <div class="absolute inset-0 bg-cover bg-center animate-hero-bg" style="background-image: url('hero-bg.jpg');"></div>
-        <div class="absolute inset-0 bg-gradient-to-r from-black/70 via-black/50 to-black/70"></div>
+        <div class="absolute inset-0 bg-gradient-to-r from-black/60 via-black/40 to-black/60"></div>
 
         <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 text-center md:text-left z-10">
             <div class="max-w-3xl">
@@ -85,9 +85,9 @@
         </div>
     </section>
 
-    <!-- 2. About Us Section -->
+    <!-- 2. About Us Section (Separate Hero Image Background) -->
     <section id="about" class="relative py-24 bg-cover bg-center bg-fixed" style="background-image: url('hero-bg.jpg');">
-        <div class="absolute inset-0 bg-gray-950/85"></div>
+        <div class="absolute inset-0 bg-gray-950/80"></div>
         <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 z-10">
             <div class="text-center max-w-3xl mx-auto mb-16">
                 <h2 class="text-4xl font-extrabold text-white tracking-wide uppercase">ABOUT US</h2>
@@ -120,17 +120,18 @@
         </div>
     </section>
 
-    <!-- 3. AC Sales & Products Section -->
-    <section id="products" class="py-20 bg-gray-950">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <!-- 3. AC Sales & Products Section (Separate Split AC Background) -->
+    <section id="products" class="relative py-24 bg-cover bg-center bg-fixed" style="background-image: url('split-ac.jpg');">
+        <div class="absolute inset-0 bg-gray-950/90"></div>
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 z-10">
             <div class="text-center max-w-3xl mx-auto mb-16">
                 <h2 class="text-3xl font-extrabold text-white sm:text-4xl tracking-wide uppercase">New & Used Air Conditioners</h2>
                 <div class="w-20 h-1 bg-blue-500 mx-auto mt-4 rounded"></div>
-                <p class="mt-4 text-gray-400 text-lg">We offer new and pre-owned AC units at the best prices across Qatar.</p>
+                <p class="mt-4 text-gray-300 text-lg">We offer new and pre-owned AC units at the best prices across Qatar.</p>
             </div>
 
             <div class="grid md:grid-cols-2 gap-8 mb-16">
-                <div class="bg-gray-900/90 p-8 rounded-2xl shadow-xl border border-gray-800">
+                <div class="bg-gray-900/85 p-8 rounded-2xl shadow-xl border border-gray-800 backdrop-blur-md">
                     <h3 class="text-2xl font-bold text-blue-400 mb-4 flex items-center gap-3">
                         <i class="fa-solid fa-box text-blue-500"></i> New Air Conditioners for Sale
                     </h3>
@@ -143,7 +144,7 @@
                     </ul>
                 </div>
 
-                <div class="bg-gray-900/90 p-8 rounded-2xl shadow-xl border border-gray-800">
+                <div class="bg-gray-900/85 p-8 rounded-2xl shadow-xl border border-gray-800 backdrop-blur-md">
                     <h3 class="text-2xl font-bold text-blue-400 mb-4 flex items-center gap-3">
                         <i class="fa-solid fa-recycle text-blue-500"></i> Used Air Conditioners for Sale
                     </h3>
@@ -196,9 +197,9 @@
         </div>
     </section>
 
-    <!-- 4. Services Section -->
-    <section id="services" class="relative py-24 bg-cover bg-center bg-fixed" style="background-image: url('hero-bg.jpg');">
-        <div class="absolute inset-0 bg-gray-950/90"></div>
+    <!-- 4. Services Section (Separate Ducted AC Background) -->
+    <section id="services" class="relative py-24 bg-cover bg-center bg-fixed" style="background-image: url('ducted-ac.jpg');">
+        <div class="absolute inset-0 bg-gray-950/85"></div>
         <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 z-10">
             <div class="text-center max-w-3xl mx-auto mb-16">
                 <h2 class="text-3xl font-extrabold text-white sm:text-4xl tracking-wide uppercase">OUR SERVICES</h2>
@@ -207,37 +208,37 @@
             </div>
 
             <div class="grid md:grid-cols-3 gap-8">
-                <div class="p-6 border border-gray-800/80 rounded-2xl bg-gray-900/80 backdrop-blur-md hover:border-blue-500 transition">
+                <div class="p-6 border border-gray-800/80 rounded-2xl bg-gray-900/85 backdrop-blur-md hover:border-blue-500 transition">
                     <i class="fa-solid fa-tools text-3xl text-blue-500 mb-4"></i>
                     <h3 class="text-xl font-bold text-white mb-2">AC Installation</h3>
                     <p class="text-gray-300">Professional installation for homes, offices, and commercial spaces for split, window, ducted & central systems.</p>
                 </div>
 
-                <div class="p-6 border border-gray-800/80 rounded-2xl bg-gray-900/80 backdrop-blur-md hover:border-blue-500 transition">
+                <div class="p-6 border border-gray-800/80 rounded-2xl bg-gray-900/85 backdrop-blur-md hover:border-blue-500 transition">
                     <i class="fa-solid fa-snowflake text-3xl text-blue-500 mb-4"></i>
                     <h3 class="text-xl font-bold text-white mb-2">AC Maintenance</h3>
                     <p class="text-gray-300">Keep your AC running at peak performance with regular check-ups, filter cleanings, and system diagnostics.</p>
                 </div>
 
-                <div class="p-6 border border-gray-800/80 rounded-2xl bg-gray-900/80 backdrop-blur-md hover:border-blue-500 transition">
+                <div class="p-6 border border-gray-800/80 rounded-2xl bg-gray-900/85 backdrop-blur-md hover:border-blue-500 transition">
                     <i class="fa-solid fa-screwdriver-wrench text-3xl text-blue-500 mb-4"></i>
                     <h3 class="text-xl font-bold text-white mb-2">Repair & Troubleshooting</h3>
                     <p class="text-gray-300">Diagnosing and fixing cooling issues, noisy units, water leaks, and compressor failures fast.</p>
                 </div>
 
-                <div class="p-6 border border-gray-800/80 rounded-2xl bg-gray-900/80 backdrop-blur-md hover:border-blue-500 transition">
+                <div class="p-6 border border-gray-800/80 rounded-2xl bg-gray-900/85 backdrop-blur-md hover:border-blue-500 transition">
                     <i class="fa-solid fa-wind text-3xl text-blue-500 mb-4"></i>
                     <h3 class="text-xl font-bold text-white mb-2">AC Duct Cleaning</h3>
                     <p class="text-gray-300">Deep duct cleaning services to remove dust, allergens, and bacteria buildup for cleaner indoor air.</p>
                 </div>
 
-                <div class="p-6 border border-gray-800/80 rounded-2xl bg-gray-900/80 backdrop-blur-md hover:border-blue-500 transition">
+                <div class="p-6 border border-gray-800/80 rounded-2xl bg-gray-900/85 backdrop-blur-md hover:border-blue-500 transition">
                     <i class="fa-solid fa-gas-pump text-3xl text-blue-500 mb-4"></i>
                     <h3 class="text-xl font-bold text-white mb-2">AC Gas Refilling</h3>
                     <p class="text-gray-300">Quality refrigerant gas recharge (R22, R410a, R32) for maximum cooling efficiency and optimal pressure.</p>
                 </div>
 
-                <div class="p-6 border border-gray-800/80 rounded-2xl bg-gray-900/80 backdrop-blur-md hover:border-blue-500 transition">
+                <div class="p-6 border border-gray-800/80 rounded-2xl bg-gray-900/85 backdrop-blur-md hover:border-blue-500 transition">
                     <i class="fa-solid fa-file-contract text-3xl text-blue-500 mb-4"></i>
                     <h3 class="text-xl font-bold text-white mb-2">Annual Maintenance (AMC)</h3>
                     <p class="text-gray-300">Hassle-free, customized annual maintenance contracts for residential villas, residential buildings, and corporate offices.</p>
@@ -246,11 +247,12 @@
         </div>
     </section>
 
-    <!-- 5. Electrical Services Section -->
-    <section id="electrical" class="py-20 bg-gray-950">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <!-- 5. Electrical Services Section (Separate Electrical Work Background) -->
+    <section id="electrical" class="relative py-24 bg-cover bg-center bg-fixed" style="background-image: url('electrical-work.jpg');">
+        <div class="absolute inset-0 bg-gray-950/90"></div>
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 z-10">
             <div class="grid md:grid-cols-2 gap-12 items-center">
-                <div>
+                <div class="bg-gray-900/80 p-8 rounded-2xl border border-gray-800 backdrop-blur-md">
                     <span class="text-blue-400 font-bold uppercase tracking-wider text-sm">Professional Electrical Works</span>
                     <h2 class="text-3xl font-extrabold text-white sm:text-4xl mt-2 mb-6 uppercase tracking-wide">ELECTRICAL</h2>
                     <p class="text-gray-300 leading-relaxed mb-6">
@@ -269,14 +271,15 @@
         </div>
     </section>
 
-    <!-- 6. Plumbing Services Section -->
-    <section id="plumbing" class="py-20 bg-gray-900 border-t border-b border-gray-800">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <!-- 6. Plumbing Services Section (Separate Plumbing Work Background) -->
+    <section id="plumbing" class="relative py-24 bg-cover bg-center bg-fixed" style="background-image: url('plumbing-work.jpg');">
+        <div class="absolute inset-0 bg-gray-950/90"></div>
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 z-10">
             <div class="grid md:grid-cols-2 gap-12 items-center">
                 <div class="order-2 md:order-1">
                     <img src="plumbing-work.jpg" alt="Plumbing Work" class="rounded-2xl shadow-2xl border border-gray-800 w-full object-cover h-96" onerror="this.src='https://via.placeholder.com/600x400?text=Plumbing+Work'">
                 </div>
-                <div class="order-1 md:order-2">
+                <div class="order-1 md:order-2 bg-gray-900/80 p-8 rounded-2xl border border-gray-800 backdrop-blur-md">
                     <span class="text-blue-400 font-bold uppercase tracking-wider text-sm">Expert Plumbing Solutions</span>
                     <h2 class="text-3xl font-extrabold text-white sm:text-4xl mt-2 mb-6 uppercase tracking-wide">PLUMBING</h2>
                     <p class="text-gray-300 leading-relaxed mb-6">
@@ -292,9 +295,8 @@
         </div>
     </section>
 
-    <!-- 7. Brochure Style Brands Section (STAY COOL WITH THE BEST AC BRANDS) -->
+    <!-- 7. Brochure Final Page Style Brands Section -->
     <section id="brands" class="relative py-24 bg-gradient-to-b from-blue-950 via-gray-950 to-blue-950 text-white overflow-hidden border-t border-gray-800">
-        <!-- Background AC Glow Effect -->
         <div class="absolute inset-0 opacity-20 bg-cover bg-center pointer-events-none" style="background-image: url('hero-bg.jpg');"></div>
 
         <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 z-10">
@@ -310,72 +312,62 @@
                 </p>
             </div>
 
-            <!-- White Card Grid Matching Brochure Layout -->
+            <!-- White Brand Card Grid Matching Brochure Layout -->
             <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4 md:gap-6 mt-8">
-                <!-- Blue Star -->
                 <div class="bg-white p-6 rounded-lg shadow-lg flex items-center justify-center h-28 hover:scale-105 transition transform">
                     <span class="font-black text-blue-900 text-xl tracking-tight flex items-center gap-1">
                         <i class="fa-solid fa-star text-blue-600 text-base"></i> BLUE STAR
                     </span>
                 </div>
 
-                <!-- Carrier -->
                 <div class="bg-white p-6 rounded-lg shadow-lg flex items-center justify-center h-28 hover:scale-105 transition transform">
                     <span class="font-serif italic font-extrabold text-blue-950 text-2xl tracking-wide">
                         Carrier
                     </span>
                 </div>
 
-                <!-- O General -->
                 <div class="bg-white p-6 rounded-lg shadow-lg flex items-center justify-center h-28 hover:scale-105 transition transform">
                     <span class="font-extrabold text-red-600 text-xl tracking-tighter">
                         <i class="fa-solid fa-power-off text-red-500 mr-1"></i>GENERAL
                     </span>
                 </div>
 
-                <!-- Super General -->
                 <div class="bg-white p-6 rounded-lg shadow-lg flex items-center justify-center h-28 hover:scale-105 transition transform">
                     <span class="font-bold text-gray-900 text-sm tracking-wider uppercase text-center border-2 border-gray-900 px-2 py-1 rounded">
                         Super General
                     </span>
                 </div>
 
-                <!-- Fawaz -->
                 <div class="bg-white p-6 rounded-lg shadow-lg flex items-center justify-center h-28 hover:scale-105 transition transform">
                     <span class="font-extrabold text-blue-800 text-xl tracking-wider flex items-center gap-1">
                         <i class="fa-solid fa-wind text-blue-500"></i> FAWAZ
                     </span>
                 </div>
 
-                <!-- Midea -->
                 <div class="bg-white p-6 rounded-lg shadow-lg flex items-center justify-center h-28 hover:scale-105 transition transform">
                     <span class="font-extrabold text-sky-500 text-2xl tracking-tight">
                         Midea
                     </span>
                 </div>
 
-                <!-- Daikin -->
                 <div class="bg-white p-6 rounded-lg shadow-lg flex items-center justify-center h-28 hover:scale-105 transition transform">
                     <span class="font-black text-blue-600 text-2xl tracking-widest uppercase">
                         DAIKIN
                     </span>
                 </div>
 
-                <!-- Gree -->
                 <div class="bg-white p-6 rounded-lg shadow-lg flex items-center justify-center h-28 hover:scale-105 transition transform">
                     <span class="font-black text-blue-700 text-2xl tracking-wider flex items-center gap-1">
                         <i class="fa-solid fa-leaf text-green-500"></i> GREE
                     </span>
                 </div>
 
-                <!-- National -->
                 <div class="bg-white p-6 rounded-lg shadow-lg flex items-center justify-center h-28 hover:scale-105 transition transform text-center">
                     <span class="font-bold text-blue-900 text-lg tracking-wide border-b-2 border-red-600 pb-0.5">
                         National
                     </span>
                 </div>
 
-                <!-- Trane -->
                 <div class="bg-white p-6 rounded-lg shadow-lg flex items-center justify-center h-28 hover:scale-105 transition transform">
                     <span class="font-black text-red-600 text-2xl tracking-widest uppercase flex items-center gap-1">
                         <i class="fa-solid fa-square text-red-600 text-sm"></i> TRANE
