@@ -7,7 +7,6 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
-        /* Smooth Slow Moving Hero Background Animation */
         @keyframes heroZoom {
             0% { transform: scale(1); }
             50% { transform: scale(1.08); }
@@ -62,7 +61,7 @@
         </div>
     </header>
 
-    <!-- 1. Hero Section with Zooming Background -->
+    <!-- 1. Hero Section -->
     <section id="home" class="relative min-h-[85vh] flex items-center overflow-hidden">
         <div class="absolute inset-0 bg-cover bg-center animate-hero-bg" style="background-image: url('hero-bg.jpg');"></div>
         <div class="absolute inset-0 bg-gradient-to-r from-black/70 via-black/50 to-black/70"></div>
@@ -86,7 +85,7 @@
         </div>
     </section>
 
-    <!-- 2. About Us Section with Background Photo -->
+    <!-- 2. About Us Section -->
     <section id="about" class="relative py-24 bg-cover bg-center bg-fixed" style="background-image: url('hero-bg.jpg');">
         <div class="absolute inset-0 bg-gray-950/85"></div>
         <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 z-10">
@@ -198,7 +197,7 @@
         </div>
     </section>
 
-    <!-- 4. Services Section with Background Photo -->
+    <!-- 4. Services Section -->
     <section id="services" class="relative py-24 bg-cover bg-center bg-fixed" style="background-image: url('hero-bg.jpg');">
         <div class="absolute inset-0 bg-gray-950/90"></div>
         <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 z-10">
@@ -294,51 +293,42 @@
         </div>
     </section>
 
-    <!-- 7. Brands Section -->
+    <!-- 7. Brands Section (Fixed Text Display) -->
     <section id="brands" class="py-16 bg-gray-950">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h2 class="text-3xl font-extrabold text-white mb-3 uppercase tracking-wide">Brands We Deal In</h2>
             <p class="text-gray-400 mb-12 text-lg">We supply, install, and service top-performing AC brands globally recognized for quality.</p>
             
             <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-6 items-center">
-                <div class="bg-gray-900/80 p-4 rounded-xl shadow-lg border border-gray-800 h-24 flex items-center justify-center hover:border-blue-500 transition">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Blue_Star_logo.svg/512px-Blue_Star_logo.svg.png" alt="Blue Star" class="max-h-12 w-auto object-contain brightness-200" onerror="this.outerHTML='<span class=\"font-bold text-gray-200 text-lg\">BLUE STAR</span>'">
+                <div class="bg-gray-900 p-6 rounded-xl shadow-lg border border-gray-800 h-24 flex items-center justify-center hover:border-blue-500 transition">
+                    <span class="font-extrabold text-gray-100 text-lg tracking-wider">BLUE STAR</span>
                 </div>
-
-                <div class="bg-gray-900/80 p-4 rounded-xl shadow-lg border border-gray-800 h-24 flex items-center justify-center hover:border-blue-500 transition">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Carrier_logo.svg/512px-Carrier_logo.svg.png" alt="Carrier" class="max-h-12 w-auto object-contain brightness-200" onerror="this.outerHTML='<span class=\"font-bold text-gray-200 text-lg\">CARRIER</span>'">
+                <div class="bg-gray-900 p-6 rounded-xl shadow-lg border border-gray-800 h-24 flex items-center justify-center hover:border-blue-500 transition">
+                    <span class="font-extrabold text-gray-100 text-lg tracking-wider">CARRIER</span>
                 </div>
-
-                <div class="bg-gray-900/80 p-4 rounded-xl shadow-lg border border-gray-800 h-24 flex items-center justify-center hover:border-blue-500 transition">
+                <div class="bg-gray-900 p-6 rounded-xl shadow-lg border border-gray-800 h-24 flex items-center justify-center hover:border-blue-500 transition">
                     <span class="font-extrabold text-blue-400 text-xl tracking-wider">O GENERAL</span>
                 </div>
-
-                <div class="bg-gray-900/80 p-4 rounded-xl shadow-lg border border-gray-800 h-24 flex items-center justify-center hover:border-blue-500 transition">
-                    <span class="font-extrabold text-gray-200 text-lg tracking-wider">SUPER GENERAL</span>
+                <div class="bg-gray-900 p-6 rounded-xl shadow-lg border border-gray-800 h-24 flex items-center justify-center hover:border-blue-500 transition">
+                    <span class="font-extrabold text-gray-100 text-base tracking-wider">SUPER GENERAL</span>
                 </div>
-
-                <div class="bg-gray-900/80 p-4 rounded-xl shadow-lg border border-gray-800 h-24 flex items-center justify-center hover:border-blue-500 transition">
+                <div class="bg-gray-900 p-6 rounded-xl shadow-lg border border-gray-800 h-24 flex items-center justify-center hover:border-blue-500 transition">
                     <span class="font-extrabold text-blue-300 text-lg tracking-wider">FAWAZ</span>
                 </div>
-
-                <div class="bg-gray-900/80 p-4 rounded-xl shadow-lg border border-gray-800 h-24 flex items-center justify-center hover:border-blue-500 transition">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Midea_logo.svg/512px-Midea_logo.svg.png" alt="Midea" class="max-h-12 w-auto object-contain brightness-200" onerror="this.outerHTML='<span class=\"font-bold text-gray-200 text-lg\">MIDEA</span>'">
+                <div class="bg-gray-900 p-6 rounded-xl shadow-lg border border-gray-800 h-24 flex items-center justify-center hover:border-blue-500 transition">
+                    <span class="font-extrabold text-gray-100 text-lg tracking-wider">MIDEA</span>
                 </div>
-
-                <div class="bg-gray-900/80 p-4 rounded-xl shadow-lg border border-gray-800 h-24 flex items-center justify-center hover:border-blue-500 transition">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Daikin_logo.svg/512px-Daikin_logo.svg.png" alt="Daikin" class="max-h-12 w-auto object-contain brightness-200" onerror="this.outerHTML='<span class=\"font-bold text-gray-200 text-lg\">DAIKIN</span>'">
+                <div class="bg-gray-900 p-6 rounded-xl shadow-lg border border-gray-800 h-24 flex items-center justify-center hover:border-blue-500 transition">
+                    <span class="font-extrabold text-gray-100 text-lg tracking-wider">DAIKIN</span>
                 </div>
-
-                <div class="bg-gray-900/80 p-4 rounded-xl shadow-lg border border-gray-800 h-24 flex items-center justify-center hover:border-blue-500 transition">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Gree_Electric_logo.svg/512px-Gree_Electric_logo.svg.png" alt="Gree" class="max-h-12 w-auto object-contain brightness-200" onerror="this.outerHTML='<span class=\"font-bold text-gray-200 text-lg\">GREE</span>'">
+                <div class="bg-gray-900 p-6 rounded-xl shadow-lg border border-gray-800 h-24 flex items-center justify-center hover:border-blue-500 transition">
+                    <span class="font-extrabold text-gray-100 text-lg tracking-wider">GREE</span>
                 </div>
-
-                <div class="bg-gray-900/80 p-4 rounded-xl shadow-lg border border-gray-800 h-24 flex items-center justify-center hover:border-blue-500 transition">
+                <div class="bg-gray-900 p-6 rounded-xl shadow-lg border border-gray-800 h-24 flex items-center justify-center hover:border-blue-500 transition">
                     <span class="font-extrabold text-blue-400 text-xl tracking-wider">National</span>
                 </div>
-
-                <div class="bg-gray-900/80 p-4 rounded-xl shadow-lg border border-gray-800 h-24 flex items-center justify-center hover:border-blue-500 transition">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Trane_logo.svg/512px-Trane_logo.svg.png" alt="Trane" class="max-h-12 w-auto object-contain brightness-200" onerror="this.outerHTML='<span class=\"font-bold text-gray-200 text-lg\">TRANE</span>'">
+                <div class="bg-gray-900 p-6 rounded-xl shadow-lg border border-gray-800 h-24 flex items-center justify-center hover:border-blue-500 transition">
+                    <span class="font-extrabold text-gray-100 text-lg tracking-wider">TRANE</span>
                 </div>
             </div>
         </div>
