@@ -19,14 +19,15 @@
 </head>
 <body class="bg-gray-950 text-gray-100 font-sans antialiased">
 
-    <!-- Header / Navbar -->
+    <!-- Header / Navbar (Increased Logo Height & Prominent Display) -->
     <header class="sticky top-0 z-50 bg-white border-b border-gray-200 shadow-md">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center h-20">
-            <a href="#" class="flex items-center gap-3">
-                <img src="logo.png" alt="Cool Land Logo" class="h-14 w-auto object-contain" onerror="this.src='https://via.placeholder.com/160x60?text=COOL+LAND'">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center h-24">
+            <a href="#" class="flex items-center py-2">
+                <!-- Prominent Bigger Logo -->
+                <img src="logo.png" alt="Cool Land Logo" class="h-20 max-h-20 w-auto object-contain" onerror="this.src='https://via.placeholder.com/200x80?text=COOL+LAND'">
             </a>
             
-            <nav class="hidden md:flex space-x-8 font-bold text-gray-800">
+            <nav class="hidden md:flex space-x-8 font-bold text-gray-800 text-lg">
                 <a href="#home" class="hover:text-blue-600 transition">Home</a>
                 <a href="#about" class="hover:text-blue-600 transition">About Us</a>
                 <a href="#products" class="hover:text-blue-600 transition">AC Sales</a>
@@ -38,7 +39,7 @@
             </nav>
 
             <div class="hidden md:flex items-center gap-4">
-                <a href="tel:+97430711221" class="bg-blue-600 text-white px-5 py-2.5 rounded-lg font-bold hover:bg-blue-700 transition flex items-center gap-2 shadow-md">
+                <a href="tel:+97430711221" class="bg-blue-600 text-white px-6 py-3 rounded-xl font-bold hover:bg-blue-700 transition flex items-center gap-2 shadow-md text-base">
                     <i class="fa-solid fa-phone"></i> Call Now
                 </a>
             </div>
@@ -85,7 +86,7 @@
         </div>
     </section>
 
-    <!-- 2. About Us Section (Separate Hero Image Background) -->
+    <!-- 2. About Us Section -->
     <section id="about" class="relative py-24 bg-cover bg-center bg-fixed" style="background-image: url('hero-bg.jpg');">
         <div class="absolute inset-0 bg-gray-950/80"></div>
         <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 z-10">
@@ -120,7 +121,7 @@
         </div>
     </section>
 
-    <!-- 3. AC Sales & Products Section (Separate Split AC Background) -->
+    <!-- 3. AC Sales & Products Section -->
     <section id="products" class="relative py-24 bg-cover bg-center bg-fixed" style="background-image: url('split-ac.jpg');">
         <div class="absolute inset-0 bg-gray-950/90"></div>
         <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 z-10">
@@ -197,7 +198,7 @@
         </div>
     </section>
 
-    <!-- 4. Services Section (Separate Ducted AC Background) -->
+    <!-- 4. Services Section -->
     <section id="services" class="relative py-24 bg-cover bg-center bg-fixed" style="background-image: url('ducted-ac.jpg');">
         <div class="absolute inset-0 bg-gray-950/85"></div>
         <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 z-10">
@@ -247,7 +248,7 @@
         </div>
     </section>
 
-    <!-- 5. Electrical Services Section (Separate Electrical Work Background) -->
+    <!-- 5. Electrical Services Section -->
     <section id="electrical" class="relative py-24 bg-cover bg-center bg-fixed" style="background-image: url('electrical-work.jpg');">
         <div class="absolute inset-0 bg-gray-950/90"></div>
         <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 z-10">
@@ -271,7 +272,7 @@
         </div>
     </section>
 
-    <!-- 6. Plumbing Services Section (Separate Plumbing Work Background) -->
+    <!-- 6. Plumbing Services Section -->
     <section id="plumbing" class="relative py-24 bg-cover bg-center bg-fixed" style="background-image: url('plumbing-work.jpg');">
         <div class="absolute inset-0 bg-gray-950/90"></div>
         <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 z-10">
@@ -295,7 +296,7 @@
         </div>
     </section>
 
-    <!-- 7. Brochure Final Page Style Brands Section -->
+    <!-- 7. Brands Section -->
     <section id="brands" class="relative py-24 bg-gradient-to-b from-blue-950 via-gray-950 to-blue-950 text-white overflow-hidden border-t border-gray-800">
         <div class="absolute inset-0 opacity-20 bg-cover bg-center pointer-events-none" style="background-image: url('hero-bg.jpg');"></div>
 
@@ -312,7 +313,6 @@
                 </p>
             </div>
 
-            <!-- White Brand Card Grid Matching Brochure Layout -->
             <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4 md:gap-6 mt-8">
                 <div class="bg-white p-6 rounded-lg shadow-lg flex items-center justify-center h-28 hover:scale-105 transition transform">
                     <span class="font-black text-blue-900 text-xl tracking-tight flex items-center gap-1">
