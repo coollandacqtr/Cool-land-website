@@ -19,7 +19,7 @@
 </head>
 <body class="bg-gray-950 text-gray-100 font-sans antialiased">
 
-    <!-- Header / Navbar (Clean White for Perfect Logo Visibility) -->
+    <!-- Header / Navbar (Clean White Header for Logo Visibility) -->
     <header class="sticky top-0 z-50 bg-white border-b border-gray-200 shadow-md">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center h-20">
             <a href="#" class="flex items-center gap-3">
@@ -109,7 +109,7 @@
                     <p class="text-gray-200 leading-relaxed">To provide fast, reliable, and affordable air conditioning services that keep our customers cool and comfortable all year round.</p>
                 </div>
 
-                <div class="bg-blue-950/70 border border-blue-500/40 p-8 rounded-2xl shadow-xl backdrop-blur-md">
+                <div class="bg-blue-950/70 border border-blue-600/40 p-8 rounded-2xl shadow-xl backdrop-blur-md">
                     <div class="w-14 h-14 bg-blue-600 text-white rounded-xl flex items-center justify-center mb-6 text-2xl shadow-lg">
                         <i class="fa-solid fa-lightbulb"></i>
                     </div>
@@ -157,7 +157,6 @@
                 </div>
             </div>
 
-            <!-- Product Cards Grid -->
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
                 <div class="bg-gray-900 rounded-xl overflow-hidden shadow-lg border border-gray-800 hover:border-blue-500 transition">
                     <img src="split-ac.jpg" alt="Split AC" class="h-48 w-full object-cover" onerror="this.src='https://via.placeholder.com/300x200?text=Split+AC'">
@@ -293,42 +292,94 @@
         </div>
     </section>
 
-    <!-- 7. Brands Section (Fixed Text Display) -->
-    <section id="brands" class="py-16 bg-gray-950">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h2 class="text-3xl font-extrabold text-white mb-3 uppercase tracking-wide">Brands We Deal In</h2>
-            <p class="text-gray-400 mb-12 text-lg">We supply, install, and service top-performing AC brands globally recognized for quality.</p>
-            
-            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-6 items-center">
-                <div class="bg-gray-900 p-6 rounded-xl shadow-lg border border-gray-800 h-24 flex items-center justify-center hover:border-blue-500 transition">
-                    <span class="font-extrabold text-gray-100 text-lg tracking-wider">BLUE STAR</span>
+    <!-- 7. Brochure Style Brands Section (STAY COOL WITH THE BEST AC BRANDS) -->
+    <section id="brands" class="relative py-24 bg-gradient-to-b from-blue-950 via-gray-950 to-blue-950 text-white overflow-hidden border-t border-gray-800">
+        <!-- Background AC Glow Effect -->
+        <div class="absolute inset-0 opacity-20 bg-cover bg-center pointer-events-none" style="background-image: url('hero-bg.jpg');"></div>
+
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 z-10">
+            <div class="text-center md:text-left mb-12">
+                <h2 class="text-4xl md:text-5xl font-black tracking-wider uppercase mb-4 text-white drop-shadow-md">
+                    STAY COOL WITH THE BEST AC BRANDS
+                </h2>
+                <h3 class="text-xl md:text-2xl font-bold text-blue-400 uppercase tracking-wide mb-3">
+                    WE DEAL IN THE MOST TRUSTED AC BRANDS
+                </h3>
+                <p class="text-gray-300 text-lg max-w-3xl">
+                    Cool Land brings you a wide selection of top-performing, energy-efficient air conditioners from globally recognized brands:
+                </p>
+            </div>
+
+            <!-- White Card Grid Matching Brochure Layout -->
+            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4 md:gap-6 mt-8">
+                <!-- Blue Star -->
+                <div class="bg-white p-6 rounded-lg shadow-lg flex items-center justify-center h-28 hover:scale-105 transition transform">
+                    <span class="font-black text-blue-900 text-xl tracking-tight flex items-center gap-1">
+                        <i class="fa-solid fa-star text-blue-600 text-base"></i> BLUE STAR
+                    </span>
                 </div>
-                <div class="bg-gray-900 p-6 rounded-xl shadow-lg border border-gray-800 h-24 flex items-center justify-center hover:border-blue-500 transition">
-                    <span class="font-extrabold text-gray-100 text-lg tracking-wider">CARRIER</span>
+
+                <!-- Carrier -->
+                <div class="bg-white p-6 rounded-lg shadow-lg flex items-center justify-center h-28 hover:scale-105 transition transform">
+                    <span class="font-serif italic font-extrabold text-blue-950 text-2xl tracking-wide">
+                        Carrier
+                    </span>
                 </div>
-                <div class="bg-gray-900 p-6 rounded-xl shadow-lg border border-gray-800 h-24 flex items-center justify-center hover:border-blue-500 transition">
-                    <span class="font-extrabold text-blue-400 text-xl tracking-wider">O GENERAL</span>
+
+                <!-- O General -->
+                <div class="bg-white p-6 rounded-lg shadow-lg flex items-center justify-center h-28 hover:scale-105 transition transform">
+                    <span class="font-extrabold text-red-600 text-xl tracking-tighter">
+                        <i class="fa-solid fa-power-off text-red-500 mr-1"></i>GENERAL
+                    </span>
                 </div>
-                <div class="bg-gray-900 p-6 rounded-xl shadow-lg border border-gray-800 h-24 flex items-center justify-center hover:border-blue-500 transition">
-                    <span class="font-extrabold text-gray-100 text-base tracking-wider">SUPER GENERAL</span>
+
+                <!-- Super General -->
+                <div class="bg-white p-6 rounded-lg shadow-lg flex items-center justify-center h-28 hover:scale-105 transition transform">
+                    <span class="font-bold text-gray-900 text-sm tracking-wider uppercase text-center border-2 border-gray-900 px-2 py-1 rounded">
+                        Super General
+                    </span>
                 </div>
-                <div class="bg-gray-900 p-6 rounded-xl shadow-lg border border-gray-800 h-24 flex items-center justify-center hover:border-blue-500 transition">
-                    <span class="font-extrabold text-blue-300 text-lg tracking-wider">FAWAZ</span>
+
+                <!-- Fawaz -->
+                <div class="bg-white p-6 rounded-lg shadow-lg flex items-center justify-center h-28 hover:scale-105 transition transform">
+                    <span class="font-extrabold text-blue-800 text-xl tracking-wider flex items-center gap-1">
+                        <i class="fa-solid fa-wind text-blue-500"></i> FAWAZ
+                    </span>
                 </div>
-                <div class="bg-gray-900 p-6 rounded-xl shadow-lg border border-gray-800 h-24 flex items-center justify-center hover:border-blue-500 transition">
-                    <span class="font-extrabold text-gray-100 text-lg tracking-wider">MIDEA</span>
+
+                <!-- Midea -->
+                <div class="bg-white p-6 rounded-lg shadow-lg flex items-center justify-center h-28 hover:scale-105 transition transform">
+                    <span class="font-extrabold text-sky-500 text-2xl tracking-tight">
+                        Midea
+                    </span>
                 </div>
-                <div class="bg-gray-900 p-6 rounded-xl shadow-lg border border-gray-800 h-24 flex items-center justify-center hover:border-blue-500 transition">
-                    <span class="font-extrabold text-gray-100 text-lg tracking-wider">DAIKIN</span>
+
+                <!-- Daikin -->
+                <div class="bg-white p-6 rounded-lg shadow-lg flex items-center justify-center h-28 hover:scale-105 transition transform">
+                    <span class="font-black text-blue-600 text-2xl tracking-widest uppercase">
+                        DAIKIN
+                    </span>
                 </div>
-                <div class="bg-gray-900 p-6 rounded-xl shadow-lg border border-gray-800 h-24 flex items-center justify-center hover:border-blue-500 transition">
-                    <span class="font-extrabold text-gray-100 text-lg tracking-wider">GREE</span>
+
+                <!-- Gree -->
+                <div class="bg-white p-6 rounded-lg shadow-lg flex items-center justify-center h-28 hover:scale-105 transition transform">
+                    <span class="font-black text-blue-700 text-2xl tracking-wider flex items-center gap-1">
+                        <i class="fa-solid fa-leaf text-green-500"></i> GREE
+                    </span>
                 </div>
-                <div class="bg-gray-900 p-6 rounded-xl shadow-lg border border-gray-800 h-24 flex items-center justify-center hover:border-blue-500 transition">
-                    <span class="font-extrabold text-blue-400 text-xl tracking-wider">National</span>
+
+                <!-- National -->
+                <div class="bg-white p-6 rounded-lg shadow-lg flex items-center justify-center h-28 hover:scale-105 transition transform text-center">
+                    <span class="font-bold text-blue-900 text-lg tracking-wide border-b-2 border-red-600 pb-0.5">
+                        National
+                    </span>
                 </div>
-                <div class="bg-gray-900 p-6 rounded-xl shadow-lg border border-gray-800 h-24 flex items-center justify-center hover:border-blue-500 transition">
-                    <span class="font-extrabold text-gray-100 text-lg tracking-wider">TRANE</span>
+
+                <!-- Trane -->
+                <div class="bg-white p-6 rounded-lg shadow-lg flex items-center justify-center h-28 hover:scale-105 transition transform">
+                    <span class="font-black text-red-600 text-2xl tracking-widest uppercase flex items-center gap-1">
+                        <i class="fa-solid fa-square text-red-600 text-sm"></i> TRANE
+                    </span>
                 </div>
             </div>
         </div>
