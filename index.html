@@ -6,6 +6,17 @@
     <title>COOL LAND - Airconditioning Trading & Services Qatar</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Smooth Slow Moving Hero Background Animation */
+        @keyframes heroZoom {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+        .animate-hero-bg {
+            animation: heroZoom 16s ease-in-out infinite;
+        }
+    </style>
 </head>
 <body class="bg-gray-50 text-gray-800 font-sans antialiased">
 
@@ -51,9 +62,14 @@
         </div>
     </header>
 
-    <!-- Hero Section -->
-    <section id="home" class="relative bg-gray-900 text-white min-h-[85vh] flex items-center bg-cover bg-center" style="background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url('hero-bg.jpg');">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 text-center md:text-left">
+    <!-- Animated Moving Hero Section -->
+    <section id="home" class="relative bg-gray-900 text-white min-h-[85vh] flex items-center overflow-hidden">
+        <!-- Moving Background Wrapper -->
+        <div class="absolute inset-0 bg-cover bg-center animate-hero-bg transition-transform duration-1000" style="background-image: url('hero-bg.jpg');"></div>
+        <!-- Dark Blue Overlay for Text Legibility -->
+        <div class="absolute inset-0 bg-gradient-to-r from-blue-950/80 via-black/75 to-blue-950/80"></div>
+
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 text-center md:text-left z-10">
             <div class="max-w-3xl">
                 <span class="inline-block bg-blue-600 text-xs uppercase tracking-widest font-semibold px-3 py-1 rounded-full mb-4">Leading HVAC & MEP Partner in Qatar</span>
                 <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight mb-6 leading-tight">
@@ -281,23 +297,52 @@
         </div>
     </section>
 
-    <!-- Brands We Deal Section -->
-    <section id="brands" class="py-16 bg-gray-50">
+    <!-- Brands We Deal In Section with Official Logos -->
+    <section id="brands" class="py-16 bg-gray-50 border-t border-b border-gray-100">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-4">Brands We Deal In</h2>
-            <p class="text-gray-600 mb-10">We supply, install, and service top-performing AC brands globally recognized for quality.</p>
+            <h2 class="text-3xl font-bold text-gray-900 mb-3">Brands We Deal In</h2>
+            <p class="text-gray-600 mb-12 text-lg">We supply, install, and service top-performing AC brands globally recognized for quality.</p>
             
-            <div class="flex flex-wrap justify-center items-center gap-8 md:gap-12 font-extrabold text-xl md:text-2xl text-gray-500">
-                <span class="hover:text-blue-600 transition">BLUE STAR</span>
-                <span class="hover:text-blue-600 transition">CARRIER</span>
-                <span class="hover:text-blue-600 transition">O GENERAL</span>
-                <span class="hover:text-blue-600 transition">SUPER GENERAL</span>
-                <span class="hover:text-blue-600 transition">FAWAZ</span>
-                <span class="hover:text-blue-600 transition">MIDEA</span>
-                <span class="hover:text-blue-600 transition">DAIKIN</span>
-                <span class="hover:text-blue-600 transition">GREE</span>
-                <span class="hover:text-blue-600 transition">NATIONAL</span>
-                <span class="hover:text-blue-600 transition">TRANE</span>
+            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-6 items-center">
+                <div class="bg-white p-4 rounded-xl shadow-sm border border-gray-100 h-24 flex items-center justify-center hover:shadow-md transition">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/ thumb/8/8c/Blue_Star_logo.svg/512px-Blue_Star_logo.svg.png" alt="Blue Star" class="max-h-12 w-auto object-contain" onerror="this.outerHTML='<span class=\"font-bold text-gray-700 text-lg\">BLUE STAR</span>'">
+                </div>
+
+                <div class="bg-white p-4 rounded-xl shadow-sm border border-gray-100 h-24 flex items-center justify-center hover:shadow-md transition">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Carrier_logo.svg/512px-Carrier_logo.svg.png" alt="Carrier" class="max-h-12 w-auto object-contain" onerror="this.outerHTML='<span class=\"font-bold text-gray-700 text-lg\">CARRIER</span>'">
+                </div>
+
+                <div class="bg-white p-4 rounded-xl shadow-sm border border-gray-100 h-24 flex items-center justify-center hover:shadow-md transition">
+                    <span class="font-extrabold text-blue-900 text-xl tracking-wider">O GENERAL</span>
+                </div>
+
+                <div class="bg-white p-4 rounded-xl shadow-sm border border-gray-100 h-24 flex items-center justify-center hover:shadow-md transition">
+                    <span class="font-extrabold text-gray-800 text-lg tracking-wider">SUPER GENERAL</span>
+                </div>
+
+                <div class="bg-white p-4 rounded-xl shadow-sm border border-gray-100 h-24 flex items-center justify-center hover:shadow-md transition">
+                    <span class="font-extrabold text-blue-800 text-lg tracking-wider">FAWAZ</span>
+                </div>
+
+                <div class="bg-white p-4 rounded-xl shadow-sm border border-gray-100 h-24 flex items-center justify-center hover:shadow-md transition">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Midea_logo.svg/512px-Midea_logo.svg.png" alt="Midea" class="max-h-12 w-auto object-contain" onerror="this.outerHTML='<span class=\"font-bold text-gray-700 text-lg\">MIDEA</span>'">
+                </div>
+
+                <div class="bg-white p-4 rounded-xl shadow-sm border border-gray-100 h-24 flex items-center justify-center hover:shadow-md transition">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Daikin_logo.svg/512px-Daikin_logo.svg.png" alt="Daikin" class="max-h-12 w-auto object-contain" onerror="this.outerHTML='<span class=\"font-bold text-gray-700 text-lg\">DAIKIN</span>'">
+                </div>
+
+                <div class="bg-white p-4 rounded-xl shadow-sm border border-gray-100 h-24 flex items-center justify-center hover:shadow-md transition">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Gree_Electric_logo.svg/512px-Gree_Electric_logo.svg.png" alt="Gree" class="max-h-12 w-auto object-contain" onerror="this.outerHTML='<span class=\"font-bold text-gray-700 text-lg\">GREE</span>'">
+                </div>
+
+                <div class="bg-white p-4 rounded-xl shadow-sm border border-gray-100 h-24 flex items-center justify-center hover:shadow-md transition">
+                    <span class="font-extrabold text-blue-600 text-xl tracking-wider">National</span>
+                </div>
+
+                <div class="bg-white p-4 rounded-xl shadow-sm border border-gray-100 h-24 flex items-center justify-center hover:shadow-md transition">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Trane_logo.svg/512px-Trane_logo.svg.png" alt="Trane" class="max-h-12 w-auto object-contain" onerror="this.outerHTML='<span class=\"font-bold text-gray-700 text-lg\">TRANE</span>'">
+                </div>
             </div>
         </div>
     </section>
